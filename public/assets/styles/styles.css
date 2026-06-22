@@ -1,0 +1,167 @@
+/* ===========================================
+   ZOUNDBEATS - styles.css
+   Versión simple para principiantes
+
+   COLORES:
+   #6C3BFF = violeta (botones, bordes activos)
+   #A855F7 = violeta claro (roles, acentos)
+   #0D0D0D = negro (fondo principal)
+   #1A1A2E = azul oscuro (fondo de tarjetas)
+   #FFFFFF = blanco (textos principales)
+   #8080A8 = gris (textos secundarios)
+=========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0D0D0D;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* ===========================================
+   BOTONES
+=========================================== */
+
+/* Botón violeta relleno */
+.btn-primario {
+    display: inline-block;
+    background-color: #6C3BFF;
+    color: #FFFFFF;
+    padding: 11px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Botón con solo borde blanco, sin fondo */
+.btn-borde {
+    display: inline-block;
+    background-color: transparent;
+    color: #FFFFFF;
+    padding: 11px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #FFFFFF;
+}
+
+/* Botón pequeño para el footer */
+.btn-pequeno {
+    display: inline-block;
+    background-color: #6C3BFF;
+    color: #FFFFFF;
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ===========================================
+   TÍTULOS REUTILIZABLES EN SECCIONES
+=========================================== */
+
+.titulo-seccion {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.subtitulo-seccion {
+    font-size: 14px;
+    color: #8080A8;
+    margin-bottom: 36px;
+}
+
+
+/* ===========================================
+   NAVBAR
+=========================================== */
+
+.navbar {
+    background-color: #0D0D0D;
+    border-bottom: 1px solid #222244;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+/* Fila interior: logo | links | botones en línea */
+.navbar-fila {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.logo-icono {
+    font-size: 18px;
+}
+
+.logo-texto {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+/* Links de navegación del centro */
+.navbar-links {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar-links a {
+    color: #8080A8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Grupo de botones derecha */
+.navbar-botones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Texto "Login" sin fondo */
+.btn-login {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 16px;
+}
