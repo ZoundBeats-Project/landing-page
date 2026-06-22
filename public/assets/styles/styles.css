@@ -1,0 +1,990 @@
+/* ===========================================
+   ZOUNDBEATS - styles.css
+   Versión simple para principiantes
+
+   COLORES:
+   #6C3BFF = violeta (botones, bordes activos)
+   #A855F7 = violeta claro (roles, acentos)
+   #0D0D0D = negro (fondo principal)
+   #1A1A2E = azul oscuro (fondo de tarjetas)
+   #FFFFFF = blanco (textos principales)
+   #8080A8 = gris (textos secundarios)
+=========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0D0D0D;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* ===========================================
+   BOTONES
+=========================================== */
+
+/* Botón violeta relleno */
+.btn-primario {
+    display: inline-block;
+    background-color: #6C3BFF;
+    color: #FFFFFF;
+    padding: 11px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Botón con solo borde blanco, sin fondo */
+.btn-borde {
+    display: inline-block;
+    background-color: transparent;
+    color: #FFFFFF;
+    padding: 11px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #FFFFFF;
+}
+
+/* Botón pequeño para el footer */
+.btn-pequeno {
+    display: inline-block;
+    background-color: #6C3BFF;
+    color: #FFFFFF;
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ===========================================
+   TÍTULOS REUTILIZABLES EN SECCIONES
+=========================================== */
+
+.titulo-seccion {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.subtitulo-seccion {
+    font-size: 14px;
+    color: #8080A8;
+    margin-bottom: 36px;
+}
+
+
+/* ===========================================
+   NAVBAR
+=========================================== */
+
+.navbar {
+    background-color: #0D0D0D;
+    border-bottom: 1px solid #222244;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+/* Fila interior: logo | links | botones en línea */
+.navbar-fila {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.logo-icono {
+    font-size: 18px;
+}
+
+.logo-texto {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+/* Links de navegación del centro */
+.navbar-links {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar-links a {
+    color: #8080A8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Grupo de botones derecha */
+.navbar-botones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Texto "Login" sin fondo */
+.btn-login {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 16px;
+}
+
+/* ===========================================
+   HERO SECTION
+=========================================== */
+
+.hero {
+    background-color: #0D0D0D;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.hero-fila {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-texto {
+    max-width: 480px;
+}
+
+.hero-etiqueta {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #8080A8;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.hero-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.texto-violeta {
+    color: #A855F7;
+}
+
+.hero-descripcion {
+    font-size: 15px;
+    color: #8080A8;
+    line-height: 1.7;
+    margin-bottom: 36px;
+}
+
+.hero-botones {
+    display: flex;
+    gap: 14px;
+}
+
+.hero-visual {
+    width: 440px;
+}
+
+.hero-tarjeta {
+    background-color: #1A1A2E;
+    border: 1px solid #6C3BFF;
+    border-radius: 20px;
+    padding: 32px;
+}
+
+.estudio-pantalla {
+    background-color: #0f0820;
+    border: 1px solid #3d1a6e;
+    border-radius: 12px;
+    padding: 28px 20px 20px;
+    text-align: center;
+}
+
+/* Grupo de barras del ecualizador */
+.barras-wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4px;
+    height: 80px;
+    margin-bottom: 16px;
+}
+
+.barra {
+    width: 8px;
+    border-radius: 4px 4px 0 0;
+    background-color: #A855F7;
+}
+
+/* Alturas distintas para simular el ecualizador */
+.barra:nth-child(1)  { height: 20px; }
+.barra:nth-child(2)  { height: 50px; }
+.barra:nth-child(3)  { height: 35px; }
+.barra:nth-child(4)  { height: 65px; }
+.barra:nth-child(5)  { height: 30px; }
+.barra:nth-child(6)  { height: 75px; }
+.barra:nth-child(7)  { height: 45px; }
+.barra:nth-child(8)  { height: 70px; }
+.barra:nth-child(9)  { height: 55px; }
+.barra:nth-child(10) { height: 80px; }
+.barra:nth-child(11) { height: 60px; }
+.barra:nth-child(12) { height: 40px; }
+.barra:nth-child(13) { height: 70px; }
+.barra:nth-child(14) { height: 30px; }
+.barra:nth-child(15) { height: 55px; }
+.barra:nth-child(16) { height: 45px; }
+.barra:nth-child(17) { height: 65px; }
+.barra:nth-child(18) { height: 25px; }
+.barra:nth-child(19) { height: 50px; }
+.barra:nth-child(20) { height: 35px; }
+
+.estudio-etiqueta {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #A855F7;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* ===========================================
+   SECCIÓN CLASES
+=========================================== */
+
+.clases {
+    background-color: #0D0D0D;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.clases-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.clase-card {
+    background-color: #12122A;
+    border: 1px solid #222244;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.clase-card-activa {
+    border: 2px solid #6C3BFF;
+}
+
+.clase-imagen {
+    height: 160px;
+    display: flex;
+    align-items: flex-end;
+    padding: 12px;
+}
+
+.fondo-trap      { background-color: #1a0035; }
+.fondo-reggaeton { background-color: #2a0030; }
+.fondo-edm       { background-color: #001a40; }
+.fondo-lofi      { background-color: #0f0520; }
+
+.clase-etiqueta {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.clase-cuerpo {
+    padding: 16px;
+}
+
+.clase-cuerpo h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+}
+
+.clase-cuerpo p {
+    font-size: 12px;
+    color: #8080A8;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.clase-meta {
+    display: flex;
+    gap: 12px;
+    font-size: 11px;
+    color: #8080A8;
+}
+
+/* ===========================================
+   SECCIÓN FEATURES (Beatmaking, Mixing...)
+=========================================== */
+
+.features {
+    background-color: #111122;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin-bottom: 28px;
+}
+
+.feature-item {
+    padding: 20px;
+}
+
+/* Ícono grande encima del título */
+.feature-icono {
+    font-size: 26px;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.feature-item h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.feature-item p {
+    font-size: 13px;
+    color: #8080A8;
+    line-height: 1.6;
+}
+
+.puntos {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 10px;
+}
+
+.punto {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #8080A8;
+}
+
+.punto-activo {
+    background-color: #6C3BFF;
+}
+
+/* ===========================================
+   SECCIÓN ESTADÍSTICAS
+=========================================== */
+
+.stats {
+    background-color: #0D0D0D;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Círculo con borde violeta */
+.stat-circulo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #6C3BFF;
+    background-color: #1A1A2E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Número dentro del círculo */
+.stat-numero {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+/* Texto debajo del círculo */
+.stat-etiqueta {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #8080A8;
+    text-transform: uppercase;
+}
+
+/* ===========================================
+   BANNER DEL WORKSHOP
+=========================================== */
+
+.workshop {
+    background-color: #0D0D0D;
+    padding-bottom: 60px;
+}
+
+/* Fila del banner completo */
+.workshop-fila {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background-color: #1A1A2E;
+    border: 1px solid #6C3BFF;
+    border-radius: 14px;
+    padding: 20px 28px;
+}
+
+/* Cuadro con el número del día */
+.workshop-numero {
+    width: 52px;
+    height: 52px;
+    background-color: #6C3BFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    flex-shrink: 0;
+}
+
+.workshop-texto {
+    flex: 1;
+}
+
+.workshop-texto h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.workshop-texto p {
+    font-size: 12px;
+    color: #8080A8;
+    line-height: 1.5;
+}
+
+/* ===========================================
+   SECCIÓN BLOG
+=========================================== */
+
+.blog {
+    background-color: #0a0a1a;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+/* Fila encabezado: título a la izq, link a la der */
+.blog-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 36px;
+}
+
+.link-ver-todo {
+    color: #8080A8;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* 3 columnas iguales */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Tarjeta del artículo */
+.blog-card {
+    background-color: #12122A;
+    border: 1px solid #222244;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* Parte superior de color (imagen) */
+.blog-imagen {
+    height: 170px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 12px;
+    position: relative;
+}
+
+/* Colores de fondo por artículo */
+.blog-img-1 { background-color: #1a0a00; }
+.blog-img-2 { background-color: #001a1a; }
+.blog-img-3 { background-color: #050025; }
+
+/* Emoji decorativo centrado en la imagen */
+.blog-emoji {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    opacity: 0.4;
+}
+
+/* Etiqueta de categoría (ej: SOFTWARE) */
+.blog-tag {
+    position: relative;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #6C3BFF;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+/* Cuerpo de texto del artículo */
+.blog-cuerpo {
+    padding: 16px;
+}
+
+/* Fecha en violeta */
+.blog-fecha {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #6C3BFF;
+    margin-bottom: 8px;
+}
+
+.blog-cuerpo h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.blog-extracto {
+    font-size: 12px;
+    color: #8080A8;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+/* Fila del autor */
+.blog-autor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Círculo de color como avatar del autor */
+.autor-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.avatar-1 { background-color: #EC4899; }
+.avatar-2 { background-color: #6C3BFF; }
+.avatar-3 { background-color: #A855F7; }
+
+.blog-autor span {
+    font-size: 12px;
+    color: #8080A8;
+}
+
+/* ===========================================
+   SECCIÓN TESTIMONIO
+=========================================== */
+
+.testimonio {
+    background-color: #0D0D0D;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+/* Columna centrada con ancho máximo */
+.testimonio-inner {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Círculo de avatar del estudiante */
+.testimonio-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #6C3BFF;
+    border: 3px solid #A855F7;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+/* Estrellas amarillas */
+.testimonio-estrellas {
+    color: #f59e0b;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Texto de la cita */
+.testimonio-cita {
+    font-size: 18px;
+    font-style: italic;
+    color: #FFFFFF;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Nombre del autor */
+.testimonio-nombre {
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+/* Rol del autor */
+.testimonio-rol {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8080A8;
+}
+
+/* ===========================================
+   SECCIÓN MENTORES
+=========================================== */
+
+.mentores {
+    background-color: #0a0a1a;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.mentores-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Tarjeta del mentor */
+.mentor-card {
+    background-color: #12122A;
+    border: 1px solid #222244;
+    border-radius: 16px;
+    padding: 28px 24px;
+    text-align: center;
+}
+
+/* Foto circular del mentor */
+.mentor-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #6C3BFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+/* Colores de avatar por mentor */
+.mentor-av1 { background-color: #3a2010; }
+.mentor-av2 { background-color: #2a0a40; }
+.mentor-av3 { background-color: #0a1a40; }
+
+.mentor-card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+/* Especialidad del mentor en violeta */
+.mentor-rol {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #A855F7;
+    margin-bottom: 10px;
+}
+
+.mentor-bio {
+    font-size: 13px;
+    color: #8080A8;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+/* Íconos de redes sociales del mentor */
+.mentor-redes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mentor-redes a {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* ===========================================
+   FOOTER
+=========================================== */
+
+.footer {
+    background-color: #070712;
+    border-top: 1px solid #222244;
+    padding-top: 60px;
+}
+
+/* 4 columnas: marca, cursos, empresa, contacto */
+.footer-columnas {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    padding-bottom: 48px;
+}
+
+/* Texto de descripción de la marca */
+.footer-marca-desc {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #6C3BFF;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.footer-tagline {
+    font-size: 13px;
+    color: #8080A8;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Íconos de redes del footer */
+.footer-redes {
+    display: flex;
+    gap: 12px;
+    font-size: 16px;
+}
+
+.footer-redes a {
+    text-decoration: none;
+}
+
+/* Título de cada columna del footer */
+.footer-col h5 {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+/* Lista de links */
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 13px;
+    color: #8080A8;
+    text-decoration: none;
+}
+
+.footer-newsletter {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.footer-newsletter input {
+    flex: 1;
+    background-color: #1A1A2E;
+    border: 1px solid #333366;
+    border-radius: 8px;
+    padding: 9px 14px;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+/* Línea y texto final del footer */
+.footer-base {
+    border-top: 1px solid #222244;
+    padding: 20px 24px;
+    text-align: center;
+}
+
+.footer-base p {
+    font-size: 12px;
+    color: #8080A8;
+}
+
+
+/* ===========================================
+   RESPONSIVE TABLET
+=========================================== */
+
+@media (max-width: 900px) {
+
+    /* Ocultar links de navegación */
+    .navbar-links {
+        display: none;
+    }
+
+    /* Hero en columna vertical */
+    .hero-fila {
+        flex-direction: column;
+    }
+
+    .hero-texto {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-titulo {
+        font-size: 40px;
+    }
+
+    .hero-botones {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .clases-grid    { grid-template-columns: repeat(2, 1fr); }
+    .features-grid  { grid-template-columns: repeat(2, 1fr); }
+    .stats-grid     { grid-template-columns: repeat(2, 1fr); }
+    .blog-grid      { grid-template-columns: repeat(2, 1fr); }
+    .mentores-grid  { grid-template-columns: repeat(2, 1fr); }
+
+    .footer-columnas { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+/* ===========================================
+   RESPONSIVE MÓVIL
+=========================================== */
+
+@media (max-width: 600px) {
+
+    .hero-titulo {
+        font-size: 32px;
+    }
+
+    .titulo-seccion {
+        font-size: 22px;
+    }
+
+    .clases-grid   { grid-template-columns: 1fr; }
+    .features-grid { grid-template-columns: 1fr; }
+    .blog-grid     { grid-template-columns: 1fr; }
+    .mentores-grid { grid-template-columns: 1fr; }
+    .footer-columnas { grid-template-columns: 1fr; }
+
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+
+    .blog-encabezado {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .workshop-fila {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonio-cita {
+        font-size: 15px;
+    }
+
+    .btn-login {
+        display: none;
+    }
+}
