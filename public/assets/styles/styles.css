@@ -363,4 +363,63 @@ body {
     color: #8080A8;
 }
 
+/* ===========================================
+   SECCIÓN FEATURES (Beatmaking, Mixing...)
+=========================================== */
+
+.features {
+    background-color: #111122;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin-bottom: 28px;
+}
+
+.feature-item {
+    padding: 20px;
+}
+
+/* Ícono grande encima del título */
+.feature-icono {
+    font-size: 26px;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.feature-item h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.feature-item p {
+    font-size: 13px;
+    color: #8080A8;
+    line-height: 1.6;
+}
+
+.puntos {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 10px;
+}
+
+.punto {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #8080A8;
+}
+
+.punto-activo {
+    background-color: #6C3BFF;
+}
 
