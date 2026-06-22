@@ -528,3 +528,134 @@ body {
     color: #8080A8;
     line-height: 1.5;
 }
+
+/* ===========================================
+   SECCIÓN BLOG
+=========================================== */
+
+.blog {
+    background-color: #0a0a1a;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+/* Fila encabezado: título a la izq, link a la der */
+.blog-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 36px;
+}
+
+.link-ver-todo {
+    color: #8080A8;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* 3 columnas iguales */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Tarjeta del artículo */
+.blog-card {
+    background-color: #12122A;
+    border: 1px solid #222244;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* Parte superior de color (imagen) */
+.blog-imagen {
+    height: 170px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 12px;
+    position: relative;
+}
+
+/* Colores de fondo por artículo */
+.blog-img-1 { background-color: #1a0a00; }
+.blog-img-2 { background-color: #001a1a; }
+.blog-img-3 { background-color: #050025; }
+
+/* Emoji decorativo centrado en la imagen */
+.blog-emoji {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    opacity: 0.4;
+}
+
+/* Etiqueta de categoría (ej: SOFTWARE) */
+.blog-tag {
+    position: relative;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #6C3BFF;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+/* Cuerpo de texto del artículo */
+.blog-cuerpo {
+    padding: 16px;
+}
+
+/* Fecha en violeta */
+.blog-fecha {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #6C3BFF;
+    margin-bottom: 8px;
+}
+
+.blog-cuerpo h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.blog-extracto {
+    font-size: 12px;
+    color: #8080A8;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+/* Fila del autor */
+.blog-autor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Círculo de color como avatar del autor */
+.autor-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.avatar-1 { background-color: #EC4899; }
+.avatar-2 { background-color: #6C3BFF; }
+.avatar-3 { background-color: #A855F7; }
+
+.blog-autor span {
+    font-size: 12px;
+    color: #8080A8;
+}
