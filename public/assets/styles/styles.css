@@ -800,3 +800,191 @@ body {
     font-size: 15px;
     text-decoration: none;
 }
+
+/* ===========================================
+   FOOTER
+=========================================== */
+
+.footer {
+    background-color: #070712;
+    border-top: 1px solid #222244;
+    padding-top: 60px;
+}
+
+/* 4 columnas: marca, cursos, empresa, contacto */
+.footer-columnas {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    padding-bottom: 48px;
+}
+
+/* Texto de descripción de la marca */
+.footer-marca-desc {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #6C3BFF;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.footer-tagline {
+    font-size: 13px;
+    color: #8080A8;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Íconos de redes del footer */
+.footer-redes {
+    display: flex;
+    gap: 12px;
+    font-size: 16px;
+}
+
+.footer-redes a {
+    text-decoration: none;
+}
+
+/* Título de cada columna del footer */
+.footer-col h5 {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+/* Lista de links */
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 13px;
+    color: #8080A8;
+    text-decoration: none;
+}
+
+.footer-newsletter {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.footer-newsletter input {
+    flex: 1;
+    background-color: #1A1A2E;
+    border: 1px solid #333366;
+    border-radius: 8px;
+    padding: 9px 14px;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+/* Línea y texto final del footer */
+.footer-base {
+    border-top: 1px solid #222244;
+    padding: 20px 24px;
+    text-align: center;
+}
+
+.footer-base p {
+    font-size: 12px;
+    color: #8080A8;
+}
+
+
+/* ===========================================
+   RESPONSIVE TABLET
+=========================================== */
+
+@media (max-width: 900px) {
+
+    /* Ocultar links de navegación */
+    .navbar-links {
+        display: none;
+    }
+
+    /* Hero en columna vertical */
+    .hero-fila {
+        flex-direction: column;
+    }
+
+    .hero-texto {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-titulo {
+        font-size: 40px;
+    }
+
+    .hero-botones {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .clases-grid    { grid-template-columns: repeat(2, 1fr); }
+    .features-grid  { grid-template-columns: repeat(2, 1fr); }
+    .stats-grid     { grid-template-columns: repeat(2, 1fr); }
+    .blog-grid      { grid-template-columns: repeat(2, 1fr); }
+    .mentores-grid  { grid-template-columns: repeat(2, 1fr); }
+
+    .footer-columnas { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+/* ===========================================
+   RESPONSIVE MÓVIL
+=========================================== */
+
+@media (max-width: 600px) {
+
+    .hero-titulo {
+        font-size: 32px;
+    }
+
+    .titulo-seccion {
+        font-size: 22px;
+    }
+
+    .clases-grid   { grid-template-columns: 1fr; }
+    .features-grid { grid-template-columns: 1fr; }
+    .blog-grid     { grid-template-columns: 1fr; }
+    .mentores-grid { grid-template-columns: 1fr; }
+    .footer-columnas { grid-template-columns: 1fr; }
+
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+
+    .blog-encabezado {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .workshop-fila {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonio-cita {
+        font-size: 15px;
+    }
+
+    .btn-login {
+        display: none;
+    }
+}
