@@ -474,3 +474,57 @@ body {
     color: #8080A8;
     text-transform: uppercase;
 }
+
+/* ===========================================
+   BANNER DEL WORKSHOP
+=========================================== */
+
+.workshop {
+    background-color: #0D0D0D;
+    padding-bottom: 60px;
+}
+
+/* Fila del banner completo */
+.workshop-fila {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background-color: #1A1A2E;
+    border: 1px solid #6C3BFF;
+    border-radius: 14px;
+    padding: 20px 28px;
+}
+
+/* Cuadro con el número del día */
+.workshop-numero {
+    width: 52px;
+    height: 52px;
+    background-color: #6C3BFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    flex-shrink: 0;
+}
+
+.workshop-texto {
+    flex: 1;
+}
+
+.workshop-texto h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.workshop-texto p {
+    font-size: 12px;
+    color: #8080A8;
+    line-height: 1.5;
+}
