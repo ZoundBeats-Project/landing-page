@@ -423,3 +423,54 @@ body {
     background-color: #6C3BFF;
 }
 
+/* ===========================================
+   SECCIÓN ESTADÍSTICAS
+=========================================== */
+
+.stats {
+    background-color: #0D0D0D;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Círculo con borde violeta */
+.stat-circulo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #6C3BFF;
+    background-color: #1A1A2E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Número dentro del círculo */
+.stat-numero {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+/* Texto debajo del círculo */
+.stat-etiqueta {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #8080A8;
+    text-transform: uppercase;
+}
