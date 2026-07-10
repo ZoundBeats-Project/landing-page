@@ -79,3 +79,45 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// ---------------------------------------------------
+// main.js - funciones basicas de la pagina
+// ---------------------------------------------------
+
+// Mostrar u ocultar la contraseña al darle click al ojito
+function togglePassword(idInput, boton) {
+    const input = document.getElementById(idInput);
+    if (input.type === "password") {
+        input.type = "text";
+        boton.textContent = "🙈";
+    } else {
+        input.type = "password";
+        boton.textContent = "👁️";
+    }
+}
+
+// Redirige a la pantalla de Google al darle click en el boton "Google"
+function irAGoogle() {
+    window.location.href = "google-login.html";
+}
+
+// Redirige a la pantalla de Apple al darle click en el boton "Apple"
+function irAApple() {
+    window.location.href = "apple-login.html";
+}
+
+// Redirige al dashboard cuando se elige una cuenta o se le da continuar
+function irADashboard() {
+    window.location.href = "dashboard.html";
+}
+
+// Cuando el usuario elige una cuenta en la pantalla de Google
+// simplemente lo mandamos directo al dashboard (como si ya inicio sesion)
+function seleccionarCuenta(elemento) {
+    irADashboard();
+}
+
+// Redirige a la pantalla de detalle del curso al hacer click en un curso del dashboard
+function irACurso() {
+    window.location.href = "course-detail.html";
+}
