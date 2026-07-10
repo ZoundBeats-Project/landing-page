@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in with Apple</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div class="auth-page">
+
+    <div class="apple-card">
+        <!-- Icono de Apple -->
+        <div class="apple-icono"></div>
+
+        <h1 class="apple-titulo">Sign in with Apple ID</h1>
+        <p class="apple-subtitulo">Use your Apple ID to sign in to 🎵 ZoundBeats.</p>
+
+        <form id="form-apple" class="auth-form">
+            <div class="campo">
+                <div class="input-con-icono">
+                    <input type="email" id="apple-id" placeholder="Apple ID" required />
+                </div>
+            </div>
+            <div class="campo">
+                <div class="input-con-icono">
+                    <input type="password" id="apple-password" placeholder="Password" required />
+                    <button type="button" class="boton-ojo" onclick="togglePassword('apple-password', this)">👁️</button>
+                </div>
+                <p class="ayuda-texto"><a href="#" class="link-olvidaste">Forgot password?</a></p>
+            </div>
+
+            <!-- Botón continuar: manda al dashboard -->
+            <button type="button" class="btn-principal" onclick="irADashboard()">Continue</button>
+        </form>
+
+        <p class="apple-aviso">
+            Your Apple ID information is used to help you sign in securely, set up
+            your account, and improve app security. You can review your data
+            preferences in Settings.
+        </p>
+
+        <p class="google-cancelar"><a href="public/registro.html">Cancel</a></p>
+    </div>
+
+</div>
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>
