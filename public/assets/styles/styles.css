@@ -1634,3 +1634,938 @@ body.light-theme .footer-newsletter div {
         flex-direction: column;
     }
 }
+
+/* ---------------------------------------------------
+   PANTALLAS DE AUTENTICACION (register, login social)
+--------------------------------------------------- */
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background: radial-gradient(circle at 85% 15%, rgba(147, 51, 234, 0.18), transparent 45%),
+    radial-gradient(circle at 10% 90%, rgba(147, 51, 234, 0.12), transparent 40%);
+}
+
+.auth-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.auth-logo-icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #a855f7, #7e22ce);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+    font-size: 20px;
+}
+
+.auth-logo-texto {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 440px;
+    background-color: #0d0b14;
+    border: 1px solid rgba(168, 85, 247, 0.25);
+    border-radius: 20px;
+    padding: 36px 32px;
+    box-shadow: 0 0 40px rgba(147, 51, 234, 0.08);
+}
+
+.auth-encabezado {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.auth-encabezado h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.auth-encabezado p {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #e5e7eb;
+}
+
+.link-olvidaste {
+    font-size: 13px;
+    color: #a855f7;
+    text-decoration: none;
+}
+
+.link-olvidaste:hover {
+    text-decoration: underline;
+}
+
+.input-con-icono {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-con-icono .icono {
+    position: absolute;
+    left: 14px;
+    font-size: 15px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.input-con-icono input {
+    width: 100%;
+    padding: 13px 44px;
+    background-color: #17141f;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-con-icono input::placeholder {
+    color: #6b7280;
+}
+
+.input-con-icono input:focus {
+    border-color: #a855f7;
+}
+
+.boton-ojo {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    opacity: 0.6;
+    padding: 4px;
+}
+
+.boton-ojo:hover {
+    opacity: 1;
+}
+
+.ayuda-texto {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.campo-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: #9ca3af;
+    cursor: pointer;
+}
+
+.campo-checkbox input {
+    margin-top: 3px;
+    accent-color: #a855f7;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.campo-checkbox a {
+    color: #a855f7;
+    text-decoration: none;
+}
+
+.campo-checkbox a:hover {
+    text-decoration: underline;
+}
+
+.btn-principal {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #a855f7, #7e22ce);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.35);
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.btn-principal:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 32px rgba(168, 85, 247, 0.5);
+}
+
+.separador {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6b7280;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin: 24px 0;
+}
+
+.separador::before,
+.separador::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.separador span {
+    padding: 0 12px;
+    white-space: nowrap;
+}
+
+.botones-sociales {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-social {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    background-color: #17141f;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-social:hover {
+    background-color: #201c2c;
+}
+
+.icono-social {
+    font-size: 15px;
+}
+
+.auth-link-alterno {
+    margin-top: 28px;
+    font-size: 14px;
+    color: #9ca3af;
+    text-align: center;
+}
+
+.auth-link-alterno a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.auth-footer {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.auth-footer a {
+    color: #6b7280;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    color: #9ca3af;
+}
+
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 28px 20px;
+    }
+
+    .botones-sociales {
+        flex-direction: column;
+    }
+}
+
+/* ---------------------------------------------------
+   PANTALLA "SIGN IN WITH GOOGLE"
+--------------------------------------------------- */
+
+.google-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    color: #202124;
+    border-radius: 16px;
+    padding: 40px 36px;
+    text-align: center;
+}
+
+.google-encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #5f6368;
+    margin-bottom: 24px;
+}
+
+.google-icono {
+    font-weight: 900;
+    color: #4285f4;
+}
+
+.google-titulo {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.google-subtitulo {
+    margin-top: 8px;
+    color: #5f6368;
+    font-size: 13px;
+}
+
+.google-subtitulo strong {
+    color: #202124;
+}
+
+.google-lista-cuentas {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 24px 0;
+    text-align: left;
+}
+
+.google-cuenta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    padding: 12px 10px;
+    border: none;
+    background: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.google-cuenta:hover {
+    background-color: #f1f3f4;
+}
+
+.google-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #a855f7, #7e22ce);
+    color: #fff;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.avatar-2 {
+    background: linear-gradient(135deg, #f0b65e, #d5478a);
+}
+
+.avatar-otra {
+    background: #e8eaed;
+    color: #5f6368;
+}
+
+.google-cuenta-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.google-cuenta-info strong {
+    font-size: 14px;
+}
+
+.google-cuenta-info small {
+    color: #5f6368;
+    font-size: 12px;
+}
+
+.google-aviso {
+    text-align: left;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #5f6368;
+    margin-bottom: 20px;
+}
+
+.google-cancelar {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.google-cancelar a {
+    color: #5f6368;
+}
+
+/* ---------------------------------------------------
+   PANTALLA "SIGN IN WITH APPLE"
+--------------------------------------------------- */
+
+.apple-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: #0d0b14;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 40px 32px;
+    text-align: center;
+}
+
+.apple-icono {
+    width: 46px;
+    height: 46px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.apple-titulo {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.apple-subtitulo {
+    color: #9ca3af;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+
+.apple-aviso {
+    text-align: left;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #6b7280;
+    margin-top: 20px;
+}
+
+/* ---------------------------------------------------
+   PANTALLA DASHBOARD
+--------------------------------------------------- */
+
+.dash-layout {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 220px 1fr 300px;
+    background: var(--bg);
+}
+
+.dash-sidebar {
+    padding: 28px 20px;
+    background: #0d0b14;
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.dash-nav-item {
+    padding: 12px 14px;
+    border-radius: 10px;
+    color: #9ca3af;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dash-nav-item:hover {
+    background: rgba(168, 85, 247, 0.08);
+}
+
+.dash-nav-item.activo {
+    background: rgba(168, 85, 247, 0.15);
+    color: #fff;
+    font-weight: 700;
+}
+
+.dash-nav-abajo {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.dash-contenido {
+    padding: 36px 32px;
+}
+
+.dash-bienvenida h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+}
+
+.dash-nombre {
+    color: var(--purple);
+}
+
+.dash-bienvenida p {
+    margin-top: 6px;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.dash-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: 28px 0;
+}
+
+.dash-stat-card {
+    background: #171d2d;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.dash-stat-icono {
+    font-size: 20px;
+}
+
+.dash-stat-label {
+    margin-top: 10px;
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+.dash-stat-numero {
+    margin-top: 6px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.dash-subtitulo {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    margin-bottom: 14px;
+}
+
+.dash-curso {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #171d2d;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+}
+
+.dash-curso-icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: rgba(168, 85, 247, 0.16);
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.dash-curso-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.dash-curso-info small {
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+.dash-barra {
+    margin-top: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+}
+
+.dash-barra-relleno {
+    height: 100%;
+    background: linear-gradient(135deg, #a855f7, #7e22ce);
+}
+
+.dash-porcentaje {
+    font-weight: 700;
+    color: var(--purple);
+    font-size: 14px;
+}
+
+.dash-panel-derecho {
+    padding: 36px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dash-card {
+    background: #171d2d;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.dash-sesion {
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.18), #171d2d);
+}
+
+.dash-etiqueta {
+    display: inline-block;
+    background: #ef4444;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+}
+
+.dash-sesion p {
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+.dash-card-titulo {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.dash-card-texto {
+    color: #9ca3af;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 900px) {
+    .dash-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .dash-sidebar,
+    .dash-panel-derecho {
+        border: none;
+    }
+}
+
+.dash-curso-clickeable {
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.dash-curso-clickeable:hover {
+    border-color: rgba(168, 85, 247, 0.4);
+}
+
+/* ---------------------------------------------------
+   PANTALLA DE DETALLE DE CURSO
+--------------------------------------------------- */
+
+.curso-contenido {
+    padding: 36px 32px;
+}
+
+.curso-encabezado {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.curso-etiqueta {
+    display: inline-block;
+    background: var(--purple);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.curso-categoria {
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+.curso-titulo {
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    margin-top: 10px;
+    max-width: 500px;
+}
+
+.curso-btn-wishlist {
+    flex-shrink: 0;
+    padding: 10px 16px;
+}
+
+.curso-video {
+    height: 320px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background:
+            radial-gradient(circle at 50% 40%, rgba(168, 85, 247, 0.55), transparent 60%),
+            #1a1024;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.curso-video-controles {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 10px;
+}
+
+.curso-play {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+    color: #171324;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.curso-tiempo {
+    color: #fff;
+    font-size: 13px;
+}
+
+.curso-barra-progreso {
+    height: 5px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+.curso-barra-relleno {
+    height: 100%;
+    background: var(--purple);
+}
+
+.curso-tabs {
+    display: flex;
+    gap: 28px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 14px;
+    margin-bottom: 4px;
+}
+
+.curso-tab {
+    color: #9ca3af;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.curso-tab.activo {
+    color: var(--purple);
+}
+
+.curso-descripcion {
+    margin-top: 12px;
+    color: #9ca3af;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 640px;
+}
+
+.curso-modulo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #171d2d;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+}
+
+.curso-modulo.actual {
+    border-color: rgba(168, 85, 247, 0.5);
+}
+
+.curso-modulo.bloqueado {
+    opacity: 0.6;
+}
+
+.curso-modulo-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: rgba(168, 85, 247, 0.16);
+    font-weight: 700;
+    font-size: 13px;
+    flex-shrink: 0;
+}
+
+.curso-modulo-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.curso-modulo-info small {
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+.curso-modulo-estado {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.curso-modulo-estado.completado {
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.curso-precio-card {
+    text-align: left;
+}
+
+.curso-precio-fila {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.curso-precio {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.curso-precio-tachado {
+    color: #6b7280;
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+.curso-descuento {
+    margin-left: auto;
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 8px;
+    border-radius: 999px;
+}
+
+.curso-garantia {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.curso-incluye-titulo {
+    margin-top: 24px;
+    color: #9ca3af;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.curso-incluye-lista {
+    list-style: none;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.curso-instructor-titulo {
+    color: #9ca3af;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+}
+
+.curso-instructor-fila {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.curso-instructor-rol {
+    color: var(--purple);
+    font-size: 12px;
+    margin-top: 2px;
+}
