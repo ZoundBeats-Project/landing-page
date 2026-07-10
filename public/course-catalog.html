@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZoundBeats – Course Catalog</title>
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div class="pagina">
+
+  <!-- ============================================
+       SIDEBAR (igual a la del AI Studio)
+  ============================================= -->
+  <aside class="sidebar">
+
+    <div class="sidebar-logo">
+      <img src="assets/images/logo-icon.svg" alt="ZoundBeats" class="sidebar-logo-icono" />
+      <span>ZoundBeats</span>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="ai-studio.html" class="sidebar-link">
+        <img src="assets/icons/dashboard.svg" alt="" class="sidebar-icono" />
+        Dashboard
+      </a>
+      <a href="courses.html" class="sidebar-link sidebar-link-activo">
+        <img src="assets/icons/courses.svg" alt="" class="sidebar-icono" />
+        Courses
+      </a>
+      <a href="ai-studio.html" class="sidebar-link">
+        <img src="assets/icons/ai-studio.svg" alt="" class="sidebar-icono" />
+        AI Studio
+        <span class="badge-new">New</span>
+      </a>
+      <a href="#" class="sidebar-link">
+        <img src="assets/icons/community.svg" alt="" class="sidebar-icono" />
+        Community
+      </a>
+      <a href="#" class="sidebar-link">
+        <img src="assets/icons/projects.svg" alt="" class="sidebar-icono" />
+        My Projects
+      </a>
+    </nav>
+
+    <div class="sidebar-abajo">
+      <a href="#" class="sidebar-link">
+        <img src="assets/icons/profile.svg" alt="" class="sidebar-icono" />
+        Profile
+      </a>
+      <a href="#" class="sidebar-link">
+        <img src="assets/icons/settings.svg" alt="" class="sidebar-icono" />
+        Settings
+      </a>
+
+      <div class="tarjeta-upgrade">
+        <p>Upgrade to Pro for unlimited AI masterings.</p>
+        <button type="button" class="btn-upgrade">Upgrade Plan</button>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ============================================
+       CONTENIDO PRINCIPAL
+  ============================================= -->
+  <main class="contenido">
+
+    <!-- Encabezado -->
+    <header class="encabezado">
+      <div>
+        <h1>Course Catalog</h1>
+        <p>Expand your sonic boundaries with professional guidance.</p>
+      </div>
+
+      <div class="encabezado-acciones">
+        <div class="buscador">
+          <img src="assets/icons/search.svg" alt="" />
+          <input type="text" placeholder="Search lessons..." />
+        </div>
+        <button type="button" class="btn-icono">
+          <img src="assets/icons/bell.svg" alt="Notificaciones" />
+        </button>
+        <img src="assets/images/avatar-usuario.jpg" alt="Usuario" class="avatar-usuario" />
+      </div>
+    </header>
+
+    <!-- Filtros -->
+    <section class="filtros">
+
+      <div class="filtro-grupo">
+        <span class="filtro-titulo">Category:</span>
+        <button type="button" class="filtro-pill filtro-pill-activo">All</button>
+        <button type="button" class="filtro-pill">Production</button>
+        <button type="button" class="filtro-pill">Mixing</button>
+        <button type="button" class="filtro-pill">Mastering</button>
+        <button type="button" class="filtro-pill">Theory</button>
+      </div>
+
+      <div class="filtro-grupo">
+        <span class="filtro-titulo">Level:</span>
+        <button type="button" class="filtro-texto filtro-texto-activo">All Levels</button>
+      </div>
+
+      <div class="filtro-grupo">
+        <span class="filtro-titulo">Price:</span>
+        <div class="filtro-caja">
+          <button type="button" class="filtro-caja-opcion filtro-caja-activo">All</button>
+          <button type="button" class="filtro-caja-opcion">Free</button>
+          <button type="button" class="filtro-caja-opcion">Paid</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Grid de cursos -->
+    <section class="cursos-grid">
+
+      <!-- Curso 1 -->
+      <article class="curso-card">
+        <a href="course-details.html" class="curso-imagen">
+          <img src="assets/images/curso-mixing.jpg" alt="Advanced Mixing Techniques with Deadmau5" />
+          <span class="etiqueta etiqueta-mixing">Mixing</span>
+          <span class="etiqueta etiqueta-nivel">Advanced</span>
+        </a>
+        <div class="curso-cuerpo">
+          <h3><a href="course-details.html">Advanced Mixing Techniques with Deadmau5</a></h3>
+          <p class="curso-autor">Joel Zimmerman</p>
+          <div class="curso-meta">
+            <span class="curso-rating">⭐⭐⭐⭐⭐ 4.9 <span class="curso-reseñas">(1.2k)</span></span>
+            <span class="curso-precio">$199</span>
+          </div>
+          <a href="course-details.html" class="btn-ver-curso">View Course</a>
+        </div>
+      </article>
+
+      <!-- Curso 2 -->
+      <article class="curso-card">
+        <a href="course-details.html" class="curso-imagen">
+          <img src="assets/images/curso-lofi.jpg" alt="Lo-Fi Foundations: From Sample to Loop" />
+          <span class="etiqueta etiqueta-produccion">Production</span>
+          <span class="etiqueta etiqueta-nivel">Beginner</span>
+        </a>
+        <div class="curso-cuerpo">
+          <h3><a href="course-details.html">Lo-Fi Foundations: From Sample to Loop</a></h3>
+          <p class="curso-autor">Kaelin Ellis</p>
+          <div class="curso-meta">
+            <span class="curso-rating">⭐⭐⭐⭐☆ 4.7 <span class="curso-reseñas">(850)</span></span>
+            <span class="curso-precio">$89</span>
+          </div>
+          <a href="course-details.html" class="btn-ver-curso">View Course</a>
+        </div>
+      </article>
+
+      <!-- Curso 3 -->
+      <article class="curso-card">
+        <a href="course-details.html" class="curso-imagen">
+          <img src="assets/images/curso-vocal.jpg" alt="Vocal Processing Masterclass" />
+          <span class="etiqueta etiqueta-vocal">Vocal</span>
+          <span class="etiqueta etiqueta-nivel">Intermediate</span>
+        </a>
+        <div class="curso-cuerpo">
+          <h3><a href="course-details.html">Vocal Processing Masterclass</a></h3>
+          <p class="curso-autor">Sarah de Warren</p>
+          <div class="curso-meta">
+            <span class="curso-rating">⭐⭐⭐⭐⭐ 4.8 <span class="curso-reseñas">(2.1k)</span></span>
+            <span class="curso-precio">$149</span>
+          </div>
+          <a href="course-details.html" class="btn-ver-curso">View Course</a>
+        </div>
+      </article>
+
+      <!-- Curso 4 -->
+      <article class="curso-card">
+        <a href="course-details.html" class="curso-imagen">
+          <img src="assets/images/curso-edm-theory.jpg" alt="EDM Music Theory: The Secrets of Hooks" />
+          <span class="etiqueta etiqueta-theory">Theory</span>
+          <span class="etiqueta etiqueta-nivel">All Levels</span>
+        </a>
+        <div class="curso-cuerpo">
+          <h3><a href="course-details.html">EDM Music Theory: The Secrets of Hooks</a></h3>
+          <p class="curso-autor">Andrew Huang</p>
+          <div class="curso-meta">
+            <span class="curso-rating">⭐⭐⭐⭐⭐ 5.0 <span class="curso-reseñas">(4.5k)</span></span>
+            <span class="curso-precio curso-precio-free">Free</span>
+          </div>
+          <a href="course-details.html" class="btn-ver-curso">View Course</a>
+        </div>
+      </article>
+
+      <!-- Curso 5 -->
+      <article class="curso-card">
+        <a href="course-details.html" class="curso-imagen">
+          <img src="assets/images/curso-mastering.jpg" alt="The Art of Mastering for Clubs" />
+          <span class="etiqueta etiqueta-mastering">Mastering</span>
+          <span class="etiqueta etiqueta-nivel">Advanced</span>
+        </a>
+        <div class="curso-cuerpo">
+          <h3><a href="course-details.html">The Art of Mastering for Clubs</a></h3>
+          <p class="curso-autor">Luca Pretolesi</p>
+          <div class="curso-meta">
+            <span class="curso-rating">⭐⭐⭐⭐☆ 4.6 <span class="curso-reseñas">(420)</span></span>
+            <span class="curso-precio">$249</span>
+          </div>
+          <a href="course-details.html" class="btn-ver-curso">View Course</a>
+        </div>
+      </article>
+
+      <!-- Curso 6 -->
+      <article class="curso-card">
+        <a href="course-details.html" class="curso-imagen">
+          <img src="assets/images/curso-logic-pro.jpg" alt="Speed Up Your Workflow in Logic Pro" />
+          <span class="etiqueta etiqueta-workflow">Workflow</span>
+          <span class="etiqueta etiqueta-nivel">Intermediate</span>
+        </a>
+        <div class="curso-cuerpo">
+          <h3><a href="course-details.html">Speed Up Your Workflow in Logic Pro</a></h3>
+          <p class="curso-autor">Guy Michelmore</p>
+          <div class="curso-meta">
+            <span class="curso-rating">⭐⭐⭐⭐⭐ 4.9 <span class="curso-reseñas">(1.8k)</span></span>
+            <span class="curso-precio">$120</span>
+          </div>
+          <a href="course-details.html" class="btn-ver-curso">View Course</a>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+</div>
+
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>
