@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZoundBeats – Dashboard</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div class="dash-layout">
+
+    <!-- Barra lateral -->
+    <aside class="dash-sidebar">
+        <div class="auth-logo" style="margin-bottom: 40px;">
+            <span class="auth-logo-icono">🎵</span>
+            <span class="auth-logo-texto" style="font-size: 18px;">ZoundBeats</span>
+        </div>
+
+        <nav class="dash-nav">
+            <a href="dashboard.html" class="dash-nav-item activo">🏠 Dashboard</a>
+            <a href="#" class="dash-nav-item">🎓 Courses</a>
+            <a href="#" class="dash-nav-item">🤖 AI Studio</a>
+            <a href="#" class="dash-nav-item">👥 Community</a>
+            <a href="#" class="dash-nav-item">📁 My Projects</a>
+        </nav>
+
+        <div class="dash-nav-abajo">
+            <a href="#" class="dash-nav-item">👤 Profile</a>
+            <a href="#" class="dash-nav-item">⚙️ Settings</a>
+        </div>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="dash-contenido">
+
+        <div class="dash-bienvenida">
+            <h1>Welcome back, <span class="dash-nombre">Alex Rivera</span> 👋</h1>
+            <p>Ready to drop some beats today?</p>
+        </div>
+
+        <!-- Tarjetas de estadísticas -->
+        <div class="dash-stats-grid">
+            <div class="dash-stat-card">
+                <span class="dash-stat-icono">⏱️</span>
+                <p class="dash-stat-label">Learning Hours</p>
+                <p class="dash-stat-numero">124.5</p>
+            </div>
+            <div class="dash-stat-card">
+                <span class="dash-stat-icono">✅</span>
+                <p class="dash-stat-label">Projects Completed</p>
+                <p class="dash-stat-numero">18</p>
+            </div>
+            <div class="dash-stat-card">
+                <span class="dash-stat-icono">🏅</span>
+                <p class="dash-stat-label">Certificates</p>
+                <p class="dash-stat-numero">3</p>
+            </div>
+        </div>
+
+        <!-- Continuar aprendiendo -->
+        <h2 class="dash-subtitulo">Continue Learning</h2>
+        <div class="dash-curso dash-curso-clickeable" onclick="irACurso()">
+            <div class="dash-curso-icono">🎚️</div>
+            <div class="dash-curso-info">
+                <strong>Serum Essentials: Sound Design</strong>
+                <small>Module 4: Wavetable Manipulation</small>
+                <div class="dash-barra"><div class="dash-barra-relleno" style="width: 75%;"></div></div>
+            </div>
+            <span class="dash-porcentaje">75%</span>
+        </div>
+        <div class="dash-curso dash-curso-clickeable" onclick="irACurso()">
+            <div class="dash-curso-icono">🎙️</div>
+            <div class="dash-curso-info">
+                <strong>Vocal Processing Masterclass</strong>
+                <small>Module 2: Tuning &amp; Harmonies</small>
+                <div class="dash-barra"><div class="dash-barra-relleno" style="width: 32%;"></div></div>
+            </div>
+            <span class="dash-porcentaje">32%</span>
+        </div>
+
+    </main>
+
+    <!-- Panel derecho -->
+    <aside class="dash-panel-derecho">
+
+        <div class="dash-card dash-sesion">
+            <span class="dash-etiqueta">Starts in 45m</span>
+            <p><strong>Advanced Mixing Techniques with Deadmau5</strong></p>
+            <button class="btn-principal">Add to Calendar</button>
+        </div>
+
+        <div class="dash-card">
+            <p class="dash-card-titulo">🏆 Weekly Challenge</p>
+            <p class="dash-card-texto">Create a 30-second Lo-Fi loop using only stock plugins.</p>
+            <button class="btn-social" style="width: 100%;">Submit Entry</button>
+        </div>
+
+        <div class="dash-card">
+            <p class="dash-card-titulo">🤖 Zound AI Assistant</p>
+            <p class="dash-card-texto">Ask me anything about your project.</p>
+        </div>
+
+    </aside>
+
+</div>
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>
