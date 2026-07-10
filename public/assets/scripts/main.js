@@ -36,3 +36,46 @@ themeButtons.forEach((button) => {
         applyTheme(nextTheme);
     });
 });
+
+// --- Mostrar / ocultar contraseña ---
+function togglePassword(inputId, boton) {
+    const input = document.getElementById(inputId);
+    const esVisible = input.type === "text";
+    input.type = esVisible ? "password" : "text";
+    boton.textContent = esVisible ? "👁️" : "🙈";
+}
+
+// --- Envío de formularios (conecta aquí tu backend / API) ---
+document.addEventListener("DOMContentLoaded", () => {
+    const formLogin = document.getElementById("form-login");
+    const formRegistro = document.getElementById("form-registro");
+
+    if (formLogin) {
+        formLogin.addEventListener("submit", (evento) => {
+            evento.preventDefault();
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            // TODO: reemplaza esto con tu llamada real de login (fetch a tu API)
+            console.log("Login:", { email, password });
+
+            // Ejemplo de redirección tras un login exitoso:
+            // window.location.href = "index.html";
+        });
+    }
+
+    if (formRegistro) {
+        formRegistro.addEventListener("submit", (evento) => {
+            evento.preventDefault();
+            const nombre = document.getElementById("nombre").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            // TODO: reemplaza esto con tu llamada real de registro (fetch a tu API)
+            console.log("Registro:", { nombre, email, password });
+
+            // Ejemplo de redirección tras un registro exitoso:
+            // window.location.href = "login.html";
+        });
+    }
+});
