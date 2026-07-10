@@ -121,3 +121,47 @@ function seleccionarCuenta(elemento) {
 function irACurso() {
     window.location.href = "course-detail.html";
 }
+
+// =========================================================
+// studio.js — ZoundBeats AI Studio
+// JavaScript básico y sencillo
+// =========================================================
+
+// 1. Seleccionar un "pill" (Cyberpunk / Industrial, etc.)
+// Cuando el usuario hace clic en un botón, le ponemos la clase
+// "pill-activo" a ese y se la quitamos a sus hermanos.
+let pills = document.querySelectorAll(".pill");
+
+for (let i = 0; i < pills.length; i++) {
+    pills[i].addEventListener("click", function () {
+        let grupo = this.parentElement;
+        let botonesDelGrupo = grupo.querySelectorAll(".pill");
+
+        for (let j = 0; j < botonesDelGrupo.length; j++) {
+            botonesDelGrupo[j].classList.remove("pill-activo");
+        }
+
+        this.classList.add("pill-activo");
+    });
+}
+
+// 2. Botones "GENERATE"
+// Por ahora solo muestran un mensaje en la consola.
+// Aquí después puedes poner tu código para generar el audio.
+let botonesGenerar = document.querySelectorAll(".btn-generar");
+
+for (let i = 0; i < botonesGenerar.length; i++) {
+    botonesGenerar[i].addEventListener("click", function () {
+        console.log("Generando...");
+    });
+}
+
+// 3. Enviar mensaje al AI Assistant
+let inputIA = document.querySelector(".ia-input input");
+let botonEnviarIA = document.querySelector(".btn-enviar-ia");
+
+botonEnviarIA.addEventListener("click", function () {
+    let mensaje = inputIA.value;
+    console.log("Mensaje enviado: " + mensaje);
+    inputIA.value = "";
+});
