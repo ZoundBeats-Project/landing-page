@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZoundBeats – AI Studio</title>
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div class="studio">
+
+  <!-- ============================================
+       SIDEBAR
+  ============================================= -->
+  <aside class="sidebar">
+
+    <div class="sidebar-logo">
+      <img src="assets/images/logo-icon.svg" alt="ZoundBeats" class="sidebar-logo-icono" />
+      <span>ZoundBeats</span>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="#" class="sidebar-link">
+        <img src="assets/icons/dashboard.svg" alt="" class="sidebar-icono" />
+        Dashboard
+      </a>
+      <a href="#" class="sidebar-link">
+        <img src="assets/icons/courses.svg" alt="" class="sidebar-icono" />
+        Courses
+      </a>
+      <a href="#" class="sidebar-link sidebar-link-activo">
+        <img src="assets/icons/ai-studio.svg" alt="" class="sidebar-icono" />
+        AI Studio
+        <span class="badge-new">New</span>
+      </a>
+      <a href="#" class="sidebar-link">
+        <img src="assets/icons/community.svg" alt="" class="sidebar-icono" />
+        Community
+      </a>
+      <a href="#" class="sidebar-link">
+        <img src="assets/icons/projects.svg" alt="" class="sidebar-icono" />
+        My Projects
+      </a>
+    </nav>
+
+    <div class="sidebar-abajo">
+      <a href="#" class="sidebar-link">
+        <img src="assets/icons/profile.svg" alt="" class="sidebar-icono" />
+        Profile
+      </a>
+      <a href="#" class="sidebar-link">
+        <img src="assets/icons/settings.svg" alt="" class="sidebar-icono" />
+        Settings
+      </a>
+
+      <div class="tarjeta-upgrade">
+        <p>Upgrade to Pro for unlimited AI masterings.</p>
+        <button type="button" class="btn-upgrade">Upgrade Plan</button>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ============================================
+       CONTENIDO PRINCIPAL
+  ============================================= -->
+  <main class="contenido">
+
+    <!-- Barra superior -->
+    <header class="topbar">
+      <div class="topbar-proyecto">
+        <span class="punto-verde"></span>
+        <span>Project: Neon Dreams.zbp</span>
+      </div>
+
+      <div class="topbar-acciones">
+        <button type="button" class="btn-secundario">Open Project</button>
+        <button type="button" class="btn-secundario">
+          <img src="assets/icons/save.svg" alt="" class="icono-boton" />
+          Save Project
+        </button>
+        <button type="button" class="btn-primario">
+          <img src="assets/icons/export.svg" alt="" class="icono-boton" />
+          Export
+        </button>
+      </div>
+
+      <div class="topbar-usuario">
+        <div class="topbar-creditos">
+          <span>CREDITS</span>
+          <strong>1,450 / 2,000</strong>
+        </div>
+        <img src="assets/images/avatar-usuario.jpg" alt="Usuario" class="avatar-usuario" />
+      </div>
+    </header>
+
+    <!-- Master output -->
+    <section class="master-output">
+      <h2>MASTER OUTPUT</h2>
+
+      <!-- Coloca aquí tu imagen de la forma de onda -->
+      <div class="waveform">
+        <img src="assets/images/waveform.svg" alt="Master output waveform" />
+      </div>
+
+      <div class="reproductor">
+        <button type="button" class="btn-play">
+          <img src="assets/icons/play.svg" alt="Reproducir" />
+        </button>
+        <span class="reproductor-tiempo">
+                    <strong>00:45.32</strong> / 03:20.00
+                </span>
+      </div>
+    </section>
+
+    <!-- Tarjetas de generación -->
+    <section class="generadores">
+
+      <!-- Generate Beat -->
+      <div class="tarjeta-generador">
+        <div class="generador-encabezado">
+          <div class="generador-titulo">
+            <img src="assets/icons/beat.svg" alt="" class="generador-icono" />
+            <h3>Generate Beat</h3>
+          </div>
+          <input type="checkbox" class="checkbox-generador" />
+        </div>
+
+        <div class="campo-generador">
+          <div class="campo-generador-titulo">
+            <span>GENRE / STYLE</span>
+            <span class="valor-actual">TECHNO</span>
+          </div>
+          <div class="opciones-pill">
+            <button type="button" class="pill">Cyberpunk</button>
+            <button type="button" class="pill pill-activo">Industrial</button>
+          </div>
+        </div>
+
+        <div class="campo-generador">
+          <div class="campo-generador-titulo">
+            <span>ENERGY LEVEL</span>
+            <span class="valor-actual">85%</span>
+          </div>
+          <div class="barra-progreso">
+            <div class="barra-progreso-relleno" style="width: 85%;"></div>
+          </div>
+        </div>
+
+        <button type="button" class="btn-generar">GENERATE</button>
+      </div>
+
+      <!-- Generate Chords -->
+      <div class="tarjeta-generador">
+        <div class="generador-encabezado">
+          <div class="generador-titulo">
+            <img src="assets/icons/chords.svg" alt="" class="generador-icono" />
+            <h3>Generate Chords</h3>
+          </div>
+          <input type="checkbox" class="checkbox-generador" />
+        </div>
+
+        <div class="campo-generador campo-generador-dos-columnas">
+          <div>
+            <span class="campo-generador-label">KEY</span>
+            <div class="selector">F Minor</div>
+          </div>
+          <div>
+            <span class="campo-generador-label">SCALE</span>
+            <div class="selector">Dorian</div>
+          </div>
+        </div>
+
+        <div class="campo-generador">
+          <div class="campo-generador-titulo">
+            <span>COMPLEXITY</span>
+            <span class="valor-actual">HIGH</span>
+          </div>
+          <div class="barra-progreso barra-segmentada">
+            <div class="segmento activo"></div>
+            <div class="segmento activo"></div>
+            <div class="segmento activo"></div>
+            <div class="segmento"></div>
+          </div>
+        </div>
+
+        <button type="button" class="btn-generar">GENERATE</button>
+      </div>
+
+      <!-- Generate Melody -->
+      <div class="tarjeta-generador">
+        <div class="generador-encabezado">
+          <div class="generador-titulo">
+            <img src="assets/icons/melody.svg" alt="" class="generador-icono" />
+            <h3>Generate Melody</h3>
+          </div>
+          <input type="checkbox" class="checkbox-generador" />
+        </div>
+
+        <div class="campo-generador">
+          <span class="campo-generador-label">VIBE PRESET</span>
+          <div class="opciones-pill">
+            <button type="button" class="pill pill-activo">✨ Euphoric</button>
+            <button type="button" class="pill">Dark</button>
+            <button type="button" class="pill">Aggressive</button>
+          </div>
+        </div>
+
+        <div class="campo-generador">
+          <div class="campo-generador-titulo">
+            <span>HUMANIZE</span>
+            <span class="valor-actual">MEDIUM</span>
+          </div>
+          <div class="barra-progreso">
+            <div class="barra-progreso-relleno" style="width: 55%;"></div>
+          </div>
+        </div>
+
+        <button type="button" class="btn-generar">GENERATE</button>
+      </div>
+
+    </section>
+
+    <!-- Línea de tiempo del proyecto -->
+    <section class="timeline">
+      <div class="timeline-encabezado">
+        <h3>PROJECT TIMELINE</h3>
+        <div class="timeline-info">
+          <span>BPM: <strong>128</strong></span>
+          <span>Key: <strong>Fm</strong></span>
+        </div>
+      </div>
+
+      <!-- Pista 1 -->
+      <div class="pista pista-activa">
+        <div class="pista-info">
+          <button type="button" class="pista-icono">
+            <img src="assets/icons/sound.svg" alt="" />
+          </button>
+          <div>
+            <p class="pista-nombre">Hyper-Beat_v2.wav</p>
+            <p class="pista-detalle">AI Generated • 8 Bars • Industrial Techno</p>
+          </div>
+        </div>
+        <div class="pista-acciones">
+          <button type="button"><img src="assets/icons/regenerate.svg" alt="Regenerar" /></button>
+          <button type="button"><img src="assets/icons/download.svg" alt="Descargar" /></button>
+          <button type="button"><img src="assets/icons/delete.svg" alt="Eliminar" /></button>
+        </div>
+      </div>
+
+      <!-- Pista 2 -->
+      <div class="pista">
+        <div class="pista-info">
+          <button type="button" class="pista-icono">
+            <img src="assets/icons/sound.svg" alt="" />
+          </button>
+          <div>
+            <p class="pista-nombre">Lead_Synth_01.mid</p>
+            <p class="pista-detalle">Imported • 4 Bars • MIDI</p>
+          </div>
+        </div>
+        <div class="pista-acciones">
+          <button type="button"><img src="assets/icons/regenerate.svg" alt="Regenerar" /></button>
+          <button type="button"><img src="assets/icons/download.svg" alt="Descargar" /></button>
+          <button type="button"><img src="assets/icons/delete.svg" alt="Eliminar" /></button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       PANEL DERECHO: ASISTENTE IA
+  ============================================= -->
+  <aside class="panel-ia">
+
+    <div class="asistente-encabezado">
+      <img src="assets/images/asistente-avatar.png" alt="Zound AI Assistant" class="asistente-avatar" />
+      <div>
+        <p class="asistente-nombre">Zound AI Assistant</p>
+        <p class="asistente-estado"><span class="punto-verde"></span> Online &amp; Ready</p>
+      </div>
+    </div>
+
+    <div class="asistente-mensaje">
+      <p>I've analyzed your current project. To make the "Neon Dreams" drop more impactful, I suggest adding a <strong>riser effect</strong> and slightly increasing the reverb on the main synth lead.</p>
+    </div>
+    <p class="asistente-hora">Assistant • 10:42 AM</p>
+
+    <div class="acciones-rapidas">
+      <p class="titulo-mini">QUICK ACTIONS</p>
+      <button type="button" class="accion-rapida">
+        Suggest a bridge transition
+        <span>›</span>
+      </button>
+      <button type="button" class="accion-rapida">
+        Mix tracks automatically
+        <span>›</span>
+      </button>
+    </div>
+
+    <div class="sonidos-recomendados">
+      <p class="titulo-mini">RECOMMENDED SOUNDS</p>
+      <div class="sonidos-grid">
+        <div class="sonido-card">
+          <img src="assets/images/sonido-void-riser.jpg" alt="Void Riser" />
+          <p>Void Riser</p>
+        </div>
+        <div class="sonido-card">
+          <img src="assets/images/sonido-ethereal-pad.jpg" alt="Ethereal Pad" />
+          <p>Ethereal Pad</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ia-input">
+      <input type="text" placeholder="Ask AI to create something..." />
+      <button type="button" class="btn-enviar-ia">
+        <img src="assets/icons/send.svg" alt="Enviar" />
+      </button>
+    </div>
+
+    <div class="mentor">
+      <img src="assets/images/mentor-avatar.jpg" alt="Joel Zimmerman" class="mentor-avatar" />
+      <div>
+        <p class="mentor-nombre">Joel Zimmerman</p>
+        <p class="mentor-estado"><span class="punto-verde"></span> Studio Mentor Online</p>
+      </div>
+    </div>
+
+    <div class="mentor-mas-avatares">
+      <img src="assets/images/mini-avatar-1.jpg" alt="" />
+      <img src="assets/images/mini-avatar-2.jpg" alt="" />
+      <img src="assets/images/mini-avatar-3.jpg" alt="" />
+      <img src="assets/images/mini-avatar-4.jpg" alt="" />
+    </div>
+
+  </aside>
+
+</div>
+
+<script src="assets/scripts/studio.js"></script>
+</body>
+</html>
