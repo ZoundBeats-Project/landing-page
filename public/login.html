@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZoundBeats – Iniciar Sesión</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div class="auth-page">
+
+    <!-- Logo -->
+    <div class="auth-logo">
+        <span class="auth-logo-icono">🎵</span>
+        <span class="auth-logo-texto">ZoundBeats</span>
+    </div>
+
+    <!-- Tarjeta -->
+    <div class="auth-card">
+
+        <div class="auth-encabezado">
+            <h1>Welcome Back</h1>
+            <p>Continue your production journey</p>
+        </div>
+
+        <form id="form-login" class="auth-form">
+
+            <!-- Email -->
+            <div class="campo">
+                <label for="email">Email Address</label>
+                <div class="input-con-icono">
+                    <span class="icono">✉️</span>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required />
+                </div>
+            </div>
+
+            <!-- Password -->
+            <div class="campo">
+                <div class="campo-fila-titulo">
+                    <label for="password">Password</label>
+                    <a href="#" class="link-olvidaste">Forgot password?</a>
+                </div>
+                <div class="input-con-icono">
+                    <span class="icono">🔒</span>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required />
+                    <button type="button" class="boton-ojo" onclick="togglePassword('password', this)">👁️</button>
+                </div>
+            </div>
+
+            <!-- Botón principal -->
+            <button type="submit" class="btn-principal">Sign In</button>
+
+        </form>
+
+        <!-- Separador -->
+        <div class="separador"><span>OR CONTINUE WITH</span></div>
+
+        <!-- Botones sociales -->
+        <div class="botones-sociales">
+            <button type="button" class="btn-social">
+                <span class="icono-social">G</span> Google
+            </button>
+            <button type="button" class="btn-social">
+                <span class="icono-social"></span> Apple
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Link a registro -->
+    <p class="auth-link-alterno">
+        Don't have an account? <a href="registro.html">Register for free</a>
+    </p>
+
+    <!-- Footer -->
+    <div class="auth-footer">
+        <a href="#">Privacy Policy</a>
+        <span>•</span>
+        <a href="#">Terms of Use</a>
+    </div>
+
+</div>
+
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>

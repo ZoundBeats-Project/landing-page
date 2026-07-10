@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZoundBeats – Crear Cuenta</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div class="auth-page">
+
+    <!-- Logo -->
+    <div class="auth-logo">
+        <span class="auth-logo-icono">🎵</span>
+        <span class="auth-logo-texto">ZoundBeats</span>
+    </div>
+
+    <!-- Tarjeta -->
+    <div class="auth-card">
+
+        <div class="auth-encabezado">
+            <h1>Create Account</h1>
+            <p>Join the next generation of sound creators</p>
+        </div>
+
+        <form id="form-registro" class="auth-form">
+
+            <!-- Nombre completo -->
+            <div class="campo">
+                <label for="nombre">Full Name</label>
+                <div class="input-con-icono">
+                    <span class="icono">👤</span>
+                    <input type="text" id="nombre" name="nombre" placeholder="John Doe" required />
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="campo">
+                <label for="email">Email Address</label>
+                <div class="input-con-icono">
+                    <span class="icono">✉️</span>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required />
+                </div>
+            </div>
+
+            <!-- Password -->
+            <div class="campo">
+                <label for="password">Password</label>
+                <div class="input-con-icono">
+                    <span class="icono">🔒</span>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required minlength="8" />
+                    <button type="button" class="boton-ojo" onclick="togglePassword('password', this)">👁️</button>
+                </div>
+                <p class="ayuda-texto">At least 8 characters, including 1 number and 1 special symbol.</p>
+            </div>
+
+            <!-- Checkbox términos -->
+            <label class="campo-checkbox">
+                <input type="checkbox" id="terminos" required />
+                <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</span>
+            </label>
+
+            <!-- Botón principal -->
+            <button type="submit" class="btn-principal">Create Account</button>
+
+        </form>
+
+        <!-- Separador -->
+        <div class="separador"><span>OR SIGN UP WITH</span></div>
+
+        <!-- Botones sociales -->
+        <div class="botones-sociales">
+            <button type="button" class="btn-social">
+                <span class="icono-social">G</span> Google
+            </button>
+            <button type="button" class="btn-social">
+                <span class="icono-social"></span> Apple
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Link a login -->
+    <p class="auth-link-alterno">
+        Already have an account? <a href="login.html">Login</a>
+    </p>
+
+    <!-- Footer -->
+    <div class="auth-footer">
+        <a href="#">Support</a>
+        <span>•</span>
+        <a href="#">Status</a>
+        <span>•</span>
+        <a href="#">Security</a>
+    </div>
+
+</div>
+
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>
