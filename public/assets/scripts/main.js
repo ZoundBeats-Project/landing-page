@@ -165,3 +165,34 @@ botonEnviarIA.addEventListener("click", function () {
     console.log("Mensaje enviado: " + mensaje);
     inputIA.value = "";
 });
+
+// =========================================================
+// courses.js — ZoundBeats Course Catalog
+// JavaScript básico y sencillo
+// =========================================================
+
+// Seleccionar una categoría (All, Production, Mixing, etc.)
+// Le ponemos la clase activa al botón que se hizo clic y se la
+// quitamos a los demás botones del mismo grupo.
+let filtrosCategoria = document.querySelectorAll(".filtro-pill");
+
+for (let i = 0; i < filtrosCategoria.length; i++) {
+    filtrosCategoria[i].addEventListener("click", function () {
+        for (let j = 0; j < filtrosCategoria.length; j++) {
+            filtrosCategoria[j].classList.remove("filtro-pill-activo");
+        }
+        this.classList.add("filtro-pill-activo");
+    });
+}
+
+// Seleccionar precio (All, Free, Paid)
+let filtrosPrecio = document.querySelectorAll(".filtro-caja-opcion");
+
+for (let i = 0; i < filtrosPrecio.length; i++) {
+    filtrosPrecio[i].addEventListener("click", function () {
+        for (let j = 0; j < filtrosPrecio.length; j++) {
+            filtrosPrecio[j].classList.remove("filtro-caja-activo");
+        }
+        this.classList.add("filtro-caja-activo");
+    });
+}
