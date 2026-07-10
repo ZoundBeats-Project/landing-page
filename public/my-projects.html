@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZoundBeats – My Projects</title>
+    <link rel="stylesheet" href="assets/styles/my-projects.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div class="pagina">
+
+    <!-- ============================================
+         SIDEBAR
+    ============================================= -->
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <img src="assets/images/logo-icon.svg" alt="ZoundBeats" class="sidebar-logo-icono" />
+            <span>ZoundBeats</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="ai-studio.html" class="sidebar-link">
+                <img src="assets/icons/dashboard.svg" alt="" class="sidebar-icono" />
+                Dashboard
+            </a>
+            <a href="courses.html" class="sidebar-link">
+                <img src="assets/icons/courses.svg" alt="" class="sidebar-icono" />
+                Courses
+            </a>
+            <a href="ai-studio.html" class="sidebar-link">
+                <img src="assets/icons/ai-studio.svg" alt="" class="sidebar-icono" />
+                AI Studio
+            </a>
+            <a href="#" class="sidebar-link">
+                <img src="assets/icons/community.svg" alt="" class="sidebar-icono" />
+                Community
+            </a>
+            <a href="my-projects.html" class="sidebar-link sidebar-link-activo">
+                <img src="assets/icons/projects.svg" alt="" class="sidebar-icono" />
+                My Projects
+            </a>
+        </nav>
+
+        <div class="sidebar-abajo">
+            <a href="#" class="sidebar-link">
+                <img src="assets/icons/profile.svg" alt="" class="sidebar-icono" />
+                Profile
+            </a>
+            <a href="#" class="sidebar-link">
+                <img src="assets/icons/settings.svg" alt="" class="sidebar-icono" />
+                Settings
+            </a>
+
+            <div class="tarjeta-upgrade">
+                <p>Upgrade to Pro for unlimited AI masterings.</p>
+                <button type="button" class="btn-upgrade">Upgrade Plan</button>
+            </div>
+        </div>
+
+    </aside>
+
+    <!-- ============================================
+         CONTENIDO PRINCIPAL
+    ============================================= -->
+    <main class="contenido">
+
+        <!-- Encabezado -->
+        <header class="encabezado">
+            <div>
+                <h1>My Projects</h1>
+                <p>Manage and edit your creative library</p>
+            </div>
+
+            <div class="encabezado-acciones">
+                <div class="buscador">
+                    <img src="assets/icons/search.svg" alt="" />
+                    <input type="text" placeholder="Search projects..." />
+                </div>
+                <button type="button" class="btn-nuevo-proyecto">
+                    <span>+</span> New Project
+                </button>
+                <img src="assets/images/avatar-usuario.jpg" alt="Usuario" class="avatar-usuario" />
+            </div>
+        </header>
+
+        <!-- Pestañas + almacenamiento -->
+        <section class="barra-superior-lista">
+
+            <div class="pestañas">
+                <button type="button" class="pestaña pestaña-activa">All Projects</button>
+                <button type="button" class="pestaña">Drafts</button>
+                <button type="button" class="pestaña">Finished</button>
+                <button type="button" class="pestaña">Cloud Storage</button>
+            </div>
+
+            <div class="tarjeta-storage">
+                <span class="storage-icono">☁️</span>
+                <div class="storage-info">
+                    <div class="storage-titulo">
+                        <span>CLOUD STORAGE</span>
+                        <span class="storage-porcentaje">42% Used</span>
+                    </div>
+                    <div class="barra-progreso">
+                        <div class="barra-progreso-relleno" style="width: 42%;"></div>
+                    </div>
+                    <p class="storage-detalle">4.2GB of 10GB used</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Lista de proyectos -->
+        <section class="lista-proyectos">
+
+            <!-- Proyecto 1 -->
+            <article class="proyecto-card proyecto-card-activa">
+                <div class="proyecto-waveform">
+                    <img src="assets/images/waveform-neon-dreams.svg" alt="Neon Dreams waveform" />
+                    <span class="proyecto-estado estado-verde">
+                        <span class="punto-estado"></span> READY TO EXPORT
+                    </span>
+                </div>
+
+                <div class="proyecto-info">
+                    <div class="proyecto-titulo">
+                        <h3>Neon Dreams</h3>
+                        <span class="etiqueta-genero">SYNTHWAVE</span>
+                    </div>
+                    <div class="proyecto-detalles">
+                        <span>📅 Updated 2 hours ago</span>
+                        <span>⏱ 03:24</span>
+                        <span>🎵 128 BPM • Fm</span>
+                    </div>
+                </div>
+
+                <div class="proyecto-acciones">
+                    <button type="button" class="btn-abrir">▶ Open</button>
+                    <button type="button" class="btn-accion-icono"><img src="assets/icons/star.svg" alt="Favorito" /></button>
+                    <button type="button" class="btn-accion-icono"><img src="assets/icons/share.svg" alt="Compartir" /></button>
+                    <button type="button" class="btn-accion-icono btn-eliminar"><img src="assets/icons/delete.svg" alt="Eliminar" /></button>
+                </div>
+            </article>
+
+            <!-- Proyecto 2 -->
+            <article class="proyecto-card">
+                <div class="proyecto-waveform">
+                    <img src="assets/images/waveform-midnight-drive.svg" alt="Midnight Drive waveform" />
+                    <span class="proyecto-estado estado-morado">
+                        <span class="punto-estado"></span> MASTERED
+                    </span>
+                </div>
+
+                <div class="proyecto-info">
+                    <div class="proyecto-titulo">
+                        <h3>Midnight Drive</h3>
+                        <span class="etiqueta-genero">LO-FI</span>
+                    </div>
+                    <div class="proyecto-detalles">
+                        <span>📅 Created Oct 12, 2023</span>
+                        <span>⏱ 04:12</span>
+                        <span>🎵 90 BPM • C#m</span>
+                    </div>
+                </div>
+
+                <div class="proyecto-acciones">
+                    <button type="button" class="btn-abrir">▶ Open</button>
+                    <button type="button" class="btn-accion-icono"><img src="assets/icons/star.svg" alt="Favorito" /></button>
+                    <button type="button" class="btn-accion-icono"><img src="assets/icons/share.svg" alt="Compartir" /></button>
+                    <button type="button" class="btn-accion-icono btn-eliminar"><img src="assets/icons/delete.svg" alt="Eliminar" /></button>
+                </div>
+            </article>
+
+            <!-- Proyecto 3 -->
+            <article class="proyecto-card">
+                <div class="proyecto-waveform">
+                    <img src="assets/images/waveform-cyber-ritual.svg" alt="Cyber Ritual waveform" />
+                    <span class="proyecto-estado estado-amarillo">
+                        <span class="punto-estado"></span> UNFINISHED
+                    </span>
+                </div>
+
+                <div class="proyecto-info">
+                    <div class="proyecto-titulo">
+                        <h3>Cyber Ritual</h3>
+                        <span class="etiqueta-genero">INDUSTRIAL</span>
+                    </div>
+                    <div class="proyecto-detalles">
+                        <span>📅 Updated 3 days ago</span>
+                        <span>⏱ 02:45</span>
+                        <span>🎵 135 BPM • Dm</span>
+                    </div>
+                </div>
+
+                <div class="proyecto-acciones">
+                    <button type="button" class="btn-abrir">▶ Open</button>
+                    <button type="button" class="btn-accion-icono"><img src="assets/icons/star.svg" alt="Favorito" /></button>
+                    <button type="button" class="btn-accion-icono"><img src="assets/icons/share.svg" alt="Compartir" /></button>
+                    <button type="button" class="btn-accion-icono btn-eliminar"><img src="assets/icons/delete.svg" alt="Eliminar" /></button>
+                </div>
+            </article>
+
+            <!-- Bloque "buscar más antiguo" -->
+            <div class="proyecto-archivo">
+                <span class="archivo-icono">📂</span>
+                <p>Looking for something older?</p>
+                <a href="#" class="link-ver-archivo">VIEW ARCHIVE</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ============================================
+         PANEL DERECHO: ESTADÍSTICAS
+    ============================================= -->
+    <aside class="panel-derecho">
+
+        <p class="titulo-panel">PROJECT STATS</p>
+
+        <div class="stats-grid">
+            <div class="stat-caja">
+                <span class="stat-label">TOTAL</span>
+                <span class="stat-numero">24</span>
+            </div>
+            <div class="stat-caja">
+                <span class="stat-label">FINISHED</span>
+                <span class="stat-numero">8</span>
+            </div>
+        </div>
+
+        <p class="titulo-panel">COLLABORATORS</p>
+        <div class="colaboradores">
+            <img src="assets/images/colaborador-1.jpg" alt="Colaborador" class="colaborador-avatar" />
+            <img src="assets/images/colaborador-2.jpg" alt="Colaborador" class="colaborador-avatar" />
+            <img src="assets/images/colaborador-3.jpg" alt="Colaborador" class="colaborador-avatar" />
+            <span class="colaborador-mas">+5</span>
+        </div>
+
+        <div class="tarjeta-tip">
+            <p class="tip-encabezado"><span class="tip-icono">⚡</span> QUICK TIP</p>
+            <p class="tip-texto">
+                Organize your projects using <strong>Custom Folders</strong> for better
+                workflow management. Access folder settings in the 'Cloud Storage' tab.
+            </p>
+            <a href="#" class="link-aprender-mas">LEARN MORE</a>
+        </div>
+
+        <div class="mentor">
+            <img src="assets/images/mentor-avatar.jpg" alt="Joel Zimmerman" class="mentor-avatar" />
+            <div>
+                <p class="mentor-nombre">Joel Zimmerman</p>
+                <p class="mentor-estado">Studio Mentor Online</p>
+            </div>
+        </div>
+
+        <div class="mentor-mas-avatares">
+            <img src="assets/images/mini-avatar-1.jpg" alt="" />
+            <img src="assets/images/mini-avatar-2.jpg" alt="" />
+            <img src="assets/images/mini-avatar-3.jpg" alt="" />
+            <img src="assets/images/mini-avatar-4.jpg" alt="" />
+        </div>
+
+    </aside>
+
+</div>
+
+<script src="assets/scripts/my-projects.js"></script>
+</body>
+</html>
