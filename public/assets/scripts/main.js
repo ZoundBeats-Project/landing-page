@@ -196,3 +196,46 @@ for (let i = 0; i < filtrosPrecio.length; i++) {
         this.classList.add("filtro-caja-activo");
     });
 }
+
+// =========================================================
+// my-projects.js — ZoundBeats My Projects
+// JavaScript básico y sencillo
+// =========================================================
+
+// Cambiar de pestaña (All Projects, Drafts, Finished, Cloud Storage)
+let pestañas = document.querySelectorAll(".pestaña");
+
+for (let i = 0; i < pestañas.length; i++) {
+    pestañas[i].addEventListener("click", function () {
+        for (let j = 0; j < pestañas.length; j++) {
+            pestañas[j].classList.remove("pestaña-activa");
+        }
+        this.classList.add("pestaña-activa");
+    });
+}
+
+// Botón "Open" de cada proyecto
+// Por ahora solo muestra el nombre en la consola.
+let botonesAbrir = document.querySelectorAll(".btn-abrir");
+
+for (let i = 0; i < botonesAbrir.length; i++) {
+    botonesAbrir[i].addEventListener("click", function () {
+        let tarjeta = this.closest(".proyecto-card");
+        let nombre = tarjeta.querySelector("h3").textContent;
+        console.log("Abriendo proyecto: " + nombre);
+        // TODO: aquí puedes redirigir al AI Studio con ese proyecto cargado
+    });
+}
+
+// Botón de eliminar (con una confirmación simple)
+let botonesEliminar = document.querySelectorAll(".btn-eliminar");
+
+for (let i = 0; i < botonesEliminar.length; i++) {
+    botonesEliminar[i].addEventListener("click", function () {
+        let confirmar = confirm("¿Seguro que quieres eliminar este proyecto?");
+        if (confirmar) {
+            let tarjeta = this.closest(".proyecto-card");
+            tarjeta.remove();
+        }
+    });
+}
