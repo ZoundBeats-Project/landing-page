@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in with Google</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div class="auth-page">
+
+    <div class="google-card">
+        <!-- Encabezado con icono de Google -->
+        <div class="google-encabezado">
+            <span class="google-icono">G</span>
+            <span>Sign in with Google</span>
+        </div>
+
+        <h1 class="google-titulo">Choose an account</h1>
+        <p class="google-subtitulo">to continue to <strong>🎵 ZoundBeats</strong></p>
+
+        <!-- Lista de cuentas -->
+        <div class="google-lista-cuentas">
+
+            <button type="button" class="google-cuenta" onclick="seleccionarCuenta(this)">
+                <span class="google-avatar">A</span>
+                <span class="google-cuenta-info">
+                    <strong>Alex Thompson</strong>
+                    <small>alex.thompson@gmail.com</small>
+                </span>
+            </button>
+
+            <button type="button" class="google-cuenta" onclick="seleccionarCuenta(this)">
+                <span class="google-avatar avatar-2">S</span>
+                <span class="google-cuenta-info">
+                    <strong>Sarah Jenkins</strong>
+                    <small>sarah.jenkins@gmail.com</small>
+                </span>
+            </button>
+
+            <button type="button" class="google-cuenta" onclick="seleccionarCuenta(this)">
+                <span class="google-avatar avatar-otra">＋</span>
+                <span class="google-cuenta-info">
+                    <strong>Use another account</strong>
+                </span>
+            </button>
+
+        </div>
+
+        <p class="google-aviso">
+            To continue, Google will share your name, email address, language preference,
+            and profile picture with ZoundBeats. Before using this app, you can review
+            ZoundBeats' privacy policy and terms of service.
+        </p>
+
+        <!-- Botón continuar: manda al dashboard -->
+        <button type="button" class="btn-principal" onclick="irADashboard()">Continue</button>
+
+        <p class="google-cancelar"><a href="public/registro.html">Cancel</a></p>
+    </div>
+
+</div>
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>
