@@ -2147,6 +2147,21 @@ body.light-theme .footer-newsletter div {
     padding: 36px 32px;
 }
 
+/* ============ ENCABEZADO SUPERIOR (topbar) ============ */
+.dash-topbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.dash-bienvenida {
+    min-width: 0;
+}
+
 .dash-bienvenida h1 {
     font-family: "Poppins", sans-serif;
     font-size: 24px;
@@ -2162,6 +2177,52 @@ body.light-theme .footer-newsletter div {
     font-size: 14px;
 }
 
+.dash-topbar-derecha {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.dash-buscador {
+    width: 220px;
+    flex-shrink: 0;
+    background-color: #171d2d;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 10px 14px;
+    color: #fff;
+    font-size: 13px;
+    font-family: inherit;
+}
+
+.dash-buscador::placeholder {
+    color: #6b7280;
+}
+
+.dash-icono-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #171d2d;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.avatar-usuario {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid rgba(168, 85, 247, 0.4);
+}
+
+/* ============ TARJETAS DE ESTADÍSTICAS ============ */
 .dash-stats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -2305,6 +2366,14 @@ body.light-theme .footer-newsletter div {
     .dash-sidebar,
     .dash-panel-derecho {
         border: none;
+    }
+
+    .dash-topbar {
+        flex-wrap: wrap;
+    }
+
+    .dash-buscador {
+        width: 100%;
     }
 }
 
