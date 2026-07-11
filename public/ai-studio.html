@@ -17,41 +17,36 @@
   <aside class="sidebar">
 
     <div class="sidebar-logo">
-      <img src="assets/images/logo-icon.svg" alt="ZoundBeats" class="sidebar-logo-icono" />
+      <span class="sidebar-logo-icono-svg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      </span>
       <span>ZoundBeats</span>
     </div>
 
     <nav class="sidebar-nav">
       <a href="dashboard.html" class="sidebar-link">
-        <img src="assets/icons/dashboard.svg" alt="" class="sidebar-icono" />
         Dashboard
       </a>
       <a href="course-catalog.html" class="sidebar-link">
-        <img src="assets/icons/courses.svg" alt="" class="sidebar-icono" />
         Courses
       </a>
       <a href="ai-studio.html" class="sidebar-link sidebar-link-activo">
-        <img src="assets/icons/ai-studio.svg" alt="" class="sidebar-icono" />
         AI Studio
         <span class="badge-new">New</span>
       </a>
       <a href="community.html" class="sidebar-link">
-        <img src="assets/icons/community.svg" alt="" class="sidebar-icono" />
         Community
       </a>
       <a href="my-projects.html" class="sidebar-link">
-        <img src="assets/icons/projects.svg" alt="" class="sidebar-icono" />
         My Projects
       </a>
     </nav>
 
     <div class="sidebar-abajo">
       <a href="profile.html" class="sidebar-link">
-        <img src="assets/icons/profile.svg" alt="" class="sidebar-icono" />
         Profile
       </a>
       <a href="settings.html" class="sidebar-link">
-        <img src="assets/icons/settings.svg" alt="" class="sidebar-icono" />
         Settings
       </a>
 
@@ -78,11 +73,11 @@
       <div class="topbar-acciones">
         <button type="button" class="btn-secundario">Open Project</button>
         <button type="button" class="btn-secundario">
-          <img src="assets/icons/save.svg" alt="" class="icono-boton" />
+          <svg class="icono-boton" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
           Save Project
         </button>
         <button type="button" class="btn-primario">
-          <img src="assets/icons/export.svg" alt="" class="icono-boton" />
+          <svg class="icono-boton" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v7a4 4 0 0 0 4 4h12M4 4l4 4M4 4l4-4" transform="translate(0 1)"/><path d="M20 4v7a4 4 0 0 1-4 4H4"/><polyline points="16 1 20 5 16 9" transform="translate(0 -1)"/></svg>
           Export
         </button>
       </div>
@@ -92,7 +87,7 @@
           <span>CREDITS</span>
           <strong>1,450 / 2,000</strong>
         </div>
-        <img src="assets/images/avatar-usuario.jpg" alt="Usuario" class="avatar-usuario" />
+        <div class="avatar-usuario avatar-iniciales" style="background: linear-gradient(135deg,#a855f7,#7c2dff);">AR</div>
       </div>
     </header>
 
@@ -100,14 +95,18 @@
     <section class="master-output">
       <h2>MASTER OUTPUT</h2>
 
-      <!-- Coloca aquí tu imagen de la forma de onda -->
       <div class="waveform">
-        <img src="assets/images/waveform.svg" alt="Master output waveform" />
+        <svg viewBox="0 0 1200 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 90 C15 20,30 160,45 90 S75 10,90 90 S120 165,135 90 S165 15,180 90 S210 160,225 90 S255 20,270 90 S300 158,315 90 S345 18,360 90 S390 162,405 90 S435 22,450 90 S480 156,495 90 S525 20,540 90 S570 160,585 90 S615 18,630 90 S660 158,675 90 S705 22,720 90 S750 160,765 90 S795 18,810 90 S840 158,855 90 S885 20,900 90 S930 160,945 90 S975 18,990 90 S1020 158,1035 90 S1065 20,1080 90 S1110 160,1125 90 S1155 20,1170 90 S1195 60,1200 90"
+                fill="none" stroke="#a855f7" stroke-width="2.5" opacity="0.95"/>
+          <path d="M0 90 C15 55,30 125,45 90 S75 45,90 90 S120 130,135 90 S165 48,180 90 S210 128,225 90 S255 52,270 90 S300 126,315 90 S345 50,360 90 S390 130,405 90 S435 54,450 90 S480 124,495 90 S525 50,540 90 S570 128,585 90 S615 46,630 90 S660 126,675 90 S705 54,720 90 S750 128,765 90 S795 46,810 90 S840 126,855 90 S885 50,900 90 S930 128,945 90 S975 46,990 90 S1020 126,1035 90 S1065 50,1080 90 S1110 128,1125 90 S1155 50,1170 90 S1195 75,1200 90"
+                fill="none" stroke="#df45ff" stroke-width="1.5" opacity="0.5"/>
+        </svg>
       </div>
 
       <div class="reproductor">
         <button type="button" class="btn-play">
-          <img src="assets/icons/play.svg" alt="Reproducir" />
+          <svg viewBox="0 0 24 24" fill="#ffffff" width="16" height="16"><path d="M8 5v14l11-7z"/></svg>
         </button>
         <span class="reproductor-tiempo">
                     <strong>00:45.32</strong> / 03:20.00
@@ -122,10 +121,10 @@
       <div class="tarjeta-generador">
         <div class="generador-encabezado">
           <div class="generador-titulo">
-            <img src="assets/icons/beat.svg" alt="" class="generador-icono" />
+            <svg class="generador-icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
             <h3>Generate Beat</h3>
           </div>
-          <input type="checkbox" class="checkbox-generador" />
+          <input type="checkbox" class="checkbox-generador" checked />
         </div>
 
         <div class="campo-generador">
@@ -156,10 +155,10 @@
       <div class="tarjeta-generador">
         <div class="generador-encabezado">
           <div class="generador-titulo">
-            <img src="assets/icons/chords.svg" alt="" class="generador-icono" />
+            <svg class="generador-icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
             <h3>Generate Chords</h3>
           </div>
-          <input type="checkbox" class="checkbox-generador" />
+          <input type="checkbox" class="checkbox-generador" checked />
         </div>
 
         <div class="campo-generador campo-generador-dos-columnas">
@@ -193,10 +192,10 @@
       <div class="tarjeta-generador">
         <div class="generador-encabezado">
           <div class="generador-titulo">
-            <img src="assets/icons/melody.svg" alt="" class="generador-icono" />
+            <svg class="generador-icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 12 6 12 9 4 14 20 17 12 22 12"/></svg>
             <h3>Generate Melody</h3>
           </div>
-          <input type="checkbox" class="checkbox-generador" />
+          <input type="checkbox" class="checkbox-generador" checked />
         </div>
 
         <div class="campo-generador">
@@ -237,7 +236,7 @@
       <div class="pista pista-activa">
         <div class="pista-info">
           <button type="button" class="pista-icono">
-            <img src="assets/icons/sound.svg" alt="" />
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
           </button>
           <div>
             <p class="pista-nombre">Hyper-Beat_v2.wav</p>
@@ -245,9 +244,15 @@
           </div>
         </div>
         <div class="pista-acciones">
-          <button type="button"><img src="assets/icons/regenerate.svg" alt="Regenerar" /></button>
-          <button type="button"><img src="assets/icons/download.svg" alt="Descargar" /></button>
-          <button type="button"><img src="assets/icons/delete.svg" alt="Eliminar" /></button>
+          <button type="button" aria-label="Regenerar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          </button>
+          <button type="button" aria-label="Descargar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </button>
+          <button type="button" aria-label="Eliminar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+          </button>
         </div>
       </div>
 
@@ -255,7 +260,7 @@
       <div class="pista">
         <div class="pista-info">
           <button type="button" class="pista-icono">
-            <img src="assets/icons/sound.svg" alt="" />
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
           </button>
           <div>
             <p class="pista-nombre">Lead_Synth_01.mid</p>
@@ -263,9 +268,15 @@
           </div>
         </div>
         <div class="pista-acciones">
-          <button type="button"><img src="assets/icons/regenerate.svg" alt="Regenerar" /></button>
-          <button type="button"><img src="assets/icons/download.svg" alt="Descargar" /></button>
-          <button type="button"><img src="assets/icons/delete.svg" alt="Eliminar" /></button>
+          <button type="button" aria-label="Regenerar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          </button>
+          <button type="button" aria-label="Descargar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </button>
+          <button type="button" aria-label="Eliminar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+          </button>
         </div>
       </div>
     </section>
@@ -278,7 +289,9 @@
   <aside class="panel-ia">
 
     <div class="asistente-encabezado">
-      <img src="assets/images/asistente-avatar.png" alt="Zound AI Assistant" class="asistente-avatar" />
+      <div class="asistente-avatar" style="background: linear-gradient(135deg,#a855f7,#df45ff); display:flex; align-items:center; justify-content:center;">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 4.9L5 9.8l4.1 3.1L7.6 18 12 15l4.4 3-1.5-5.1L19 9.8l-6.1-1.9L12 3Z"/></svg>
+      </div>
       <div>
         <p class="asistente-nombre">Zound AI Assistant</p>
         <p class="asistente-estado"><span class="punto-verde"></span> Online &amp; Ready</p>
@@ -306,11 +319,15 @@
       <p class="titulo-mini">RECOMMENDED SOUNDS</p>
       <div class="sonidos-grid">
         <div class="sonido-card">
-          <img src="assets/images/sonido-void-riser.jpg" alt="Void Riser" />
+          <div style="width:100%;height:80px;background:linear-gradient(160deg,#f9a8d4,#f472b6);display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#4a044e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3l2-7 4 14 3-10 2 5h6"/></svg>
+          </div>
           <p>Void Riser</p>
         </div>
         <div class="sonido-card">
-          <img src="assets/images/sonido-ethereal-pad.jpg" alt="Ethereal Pad" />
+          <div style="width:100%;height:80px;background:linear-gradient(160deg,#a855f7,#6d28d9);display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="6" x2="6" y2="18"/><line x1="10" y1="6" x2="10" y2="18"/><line x1="14" y1="6" x2="14" y2="18"/><line x1="18" y1="6" x2="18" y2="18"/></svg>
+          </div>
           <p>Ethereal Pad</p>
         </div>
       </div>
@@ -319,12 +336,12 @@
     <div class="ia-input">
       <input type="text" placeholder="Ask AI to create something..." />
       <button type="button" class="btn-enviar-ia">
-        <img src="assets/icons/send.svg" alt="Enviar" />
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
       </button>
     </div>
 
     <div class="mentor">
-      <img src="assets/images/mentor-avatar.jpg" alt="Joel Zimmerman" class="mentor-avatar" />
+      <div class="mentor-avatar avatar-iniciales" style="background: linear-gradient(135deg,#7e22ce,#a855f7);">JZ</div>
       <div>
         <p class="mentor-nombre">Joel Zimmerman</p>
         <p class="mentor-estado"><span class="punto-verde"></span> Studio Mentor Online</p>
@@ -332,10 +349,10 @@
     </div>
 
     <div class="mentor-mas-avatares">
-      <img src="assets/images/mini-avatar-1.jpg" alt="" />
-      <img src="assets/images/mini-avatar-2.jpg" alt="" />
-      <img src="assets/images/mini-avatar-3.jpg" alt="" />
-      <img src="assets/images/mini-avatar-4.jpg" alt="" />
+      <div class="avatar-iniciales" style="background:#a855f7;">A</div>
+      <div class="avatar-iniciales" style="background:#df45ff;">C</div>
+      <div class="avatar-iniciales" style="background:#7c2dff;">E</div>
+      <div class="avatar-iniciales" style="background:#c084fc; color:#2b1140;">G</div>
     </div>
 
   </aside>

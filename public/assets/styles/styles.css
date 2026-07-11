@@ -3869,7 +3869,6 @@ a {
         width: 180px;
     }
 }
-
 /* =========================================================
    my-projects.css — ZoundBeats My Projects
    ========================================================= */
@@ -3978,14 +3977,14 @@ a {
     color: #c084fc;
 }
 
-.barra-progreso {
+.tarjeta-storage .barra-progreso {
     height: 6px;
     background-color: rgba(255, 255, 255, 0.08);
     border-radius: 10px;
     overflow: hidden;
 }
 
-.barra-progreso-relleno {
+.tarjeta-storage .barra-progreso-relleno {
     height: 100%;
     background: linear-gradient(90deg, #a855f7, #df45ff);
     border-radius: 10px;
