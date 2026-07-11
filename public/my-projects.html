@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div class="pagina">
+<div class="pagina pagina-proyectos">
 
     <!-- ============================================
          SIDEBAR
@@ -17,40 +17,35 @@
     <aside class="sidebar">
 
         <div class="sidebar-logo">
-            <img src="assets/images/logo-icon.svg" alt="ZoundBeats" class="sidebar-logo-icono" />
+            <span class="sidebar-logo-icono-svg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </span>
             <span>ZoundBeats</span>
         </div>
 
         <nav class="sidebar-nav">
-            <a href="ai-studio.html" class="sidebar-link">
-                <img src="assets/icons/dashboard.svg" alt="" class="sidebar-icono" />
+            <a href="dashboard.html" class="sidebar-link">
                 Dashboard
             </a>
-            <a href="courses.html" class="sidebar-link">
-                <img src="assets/icons/courses.svg" alt="" class="sidebar-icono" />
+            <a href="course-catalog.html" class="sidebar-link">
                 Courses
             </a>
             <a href="ai-studio.html" class="sidebar-link">
-                <img src="assets/icons/ai-studio.svg" alt="" class="sidebar-icono" />
                 AI Studio
             </a>
-            <a href="#" class="sidebar-link">
-                <img src="assets/icons/community.svg" alt="" class="sidebar-icono" />
+            <a href="community.html" class="sidebar-link">
                 Community
             </a>
             <a href="my-projects.html" class="sidebar-link sidebar-link-activo">
-                <img src="assets/icons/projects.svg" alt="" class="sidebar-icono" />
                 My Projects
             </a>
         </nav>
 
         <div class="sidebar-abajo">
-            <a href="#" class="sidebar-link">
-                <img src="assets/icons/profile.svg" alt="" class="sidebar-icono" />
+            <a href="profile.html" class="sidebar-link">
                 Profile
             </a>
-            <a href="#" class="sidebar-link">
-                <img src="assets/icons/settings.svg" alt="" class="sidebar-icono" />
+            <a href="settings.html" class="sidebar-link">
                 Settings
             </a>
 
@@ -76,13 +71,13 @@
 
             <div class="encabezado-acciones">
                 <div class="buscador">
-                    <img src="assets/icons/search.svg" alt="" />
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                     <input type="text" placeholder="Search projects..." />
                 </div>
                 <button type="button" class="btn-nuevo-proyecto">
                     <span>+</span> New Project
                 </button>
-                <img src="assets/images/avatar-usuario.jpg" alt="Usuario" class="avatar-usuario" />
+                <div class="avatar-usuario avatar-iniciales" style="background: linear-gradient(135deg,#a855f7,#7c2dff);">AR</div>
             </div>
         </header>
 
@@ -118,7 +113,11 @@
             <!-- Proyecto 1 -->
             <article class="proyecto-card proyecto-card-activa">
                 <div class="proyecto-waveform">
-                    <img src="assets/images/waveform-neon-dreams.svg" alt="Neon Dreams waveform" />
+                    <svg viewBox="0 0 220 96" preserveAspectRatio="none">
+                        <rect width="220" height="96" fill="#050507" />
+                        <path d="M0 48 C10 20, 20 76, 30 48 S50 12, 60 48 S80 84, 90 48 S110 16, 120 48 S140 80, 150 48 S170 20, 180 48 S200 78, 220 48" fill="none" stroke="#a855f7" stroke-width="2.5" opacity="0.9"/>
+                        <path d="M0 48 C10 30, 20 66, 30 48 S50 24, 60 48 S80 72, 90 48 S110 28, 120 48 S140 70, 150 48 S170 30, 180 48 S200 66, 220 48" fill="none" stroke="#df45ff" stroke-width="1.5" opacity="0.5"/>
+                    </svg>
                     <span class="proyecto-estado estado-verde">
                         <span class="punto-estado"></span> READY TO EXPORT
                     </span>
@@ -131,23 +130,35 @@
                     </div>
                     <div class="proyecto-detalles">
                         <span>📅 Updated 2 hours ago</span>
-                        <span>⏱ 03:24</span>
+                        <span>⏱️ 03:24</span>
                         <span>🎵 128 BPM • Fm</span>
                     </div>
                 </div>
 
                 <div class="proyecto-acciones">
-                    <button type="button" class="btn-abrir">▶ Open</button>
-                    <button type="button" class="btn-accion-icono"><img src="assets/icons/star.svg" alt="Favorito" /></button>
-                    <button type="button" class="btn-accion-icono"><img src="assets/icons/share.svg" alt="Compartir" /></button>
-                    <button type="button" class="btn-accion-icono btn-eliminar"><img src="assets/icons/delete.svg" alt="Eliminar" /></button>
+                    <button type="button" class="btn-abrir">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M8 5v14l11-7z"/></svg>
+                        Open
+                    </button>
+                    <button type="button" class="btn-accion-icono" aria-label="Favorito">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </button>
+                    <button type="button" class="btn-accion-icono" aria-label="Compartir">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>
+                    </button>
+                    <button type="button" class="btn-accion-icono btn-eliminar" aria-label="Eliminar">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+                    </button>
                 </div>
             </article>
 
             <!-- Proyecto 2 -->
             <article class="proyecto-card">
                 <div class="proyecto-waveform">
-                    <img src="assets/images/waveform-midnight-drive.svg" alt="Midnight Drive waveform" />
+                    <svg viewBox="0 0 220 96" preserveAspectRatio="none">
+                        <rect width="220" height="96" fill="#050507" />
+                        <path d="M0 48 C15 42, 30 54, 45 48 S75 40, 90 48 S120 56, 135 48 S165 42, 180 48 S210 54, 220 48" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.6"/>
+                    </svg>
                     <span class="proyecto-estado estado-morado">
                         <span class="punto-estado"></span> MASTERED
                     </span>
@@ -160,23 +171,35 @@
                     </div>
                     <div class="proyecto-detalles">
                         <span>📅 Created Oct 12, 2023</span>
-                        <span>⏱ 04:12</span>
+                        <span>⏱️ 04:12</span>
                         <span>🎵 90 BPM • C#m</span>
                     </div>
                 </div>
 
                 <div class="proyecto-acciones">
-                    <button type="button" class="btn-abrir">▶ Open</button>
-                    <button type="button" class="btn-accion-icono"><img src="assets/icons/star.svg" alt="Favorito" /></button>
-                    <button type="button" class="btn-accion-icono"><img src="assets/icons/share.svg" alt="Compartir" /></button>
-                    <button type="button" class="btn-accion-icono btn-eliminar"><img src="assets/icons/delete.svg" alt="Eliminar" /></button>
+                    <button type="button" class="btn-abrir">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M8 5v14l11-7z"/></svg>
+                        Open
+                    </button>
+                    <button type="button" class="btn-accion-icono" aria-label="Favorito">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </button>
+                    <button type="button" class="btn-accion-icono" aria-label="Compartir">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>
+                    </button>
+                    <button type="button" class="btn-accion-icono btn-eliminar" aria-label="Eliminar">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+                    </button>
                 </div>
             </article>
 
             <!-- Proyecto 3 -->
             <article class="proyecto-card">
                 <div class="proyecto-waveform">
-                    <img src="assets/images/waveform-cyber-ritual.svg" alt="Cyber Ritual waveform" />
+                    <svg viewBox="0 0 220 96" preserveAspectRatio="none">
+                        <rect width="220" height="96" fill="#050507" />
+                        <path d="M0 48 L12 10 L24 86 L36 20 L48 78 L60 14 L72 82 L84 18 L96 80 L108 16 L120 84 L132 22 L144 76 L156 12 L168 86 L180 20 L192 78 L204 16 L220 48" fill="none" stroke="#facc15" stroke-width="2" opacity="0.85"/>
+                    </svg>
                     <span class="proyecto-estado estado-amarillo">
                         <span class="punto-estado"></span> UNFINISHED
                     </span>
@@ -189,16 +212,25 @@
                     </div>
                     <div class="proyecto-detalles">
                         <span>📅 Updated 3 days ago</span>
-                        <span>⏱ 02:45</span>
+                        <span>⏱️ 02:45</span>
                         <span>🎵 135 BPM • Dm</span>
                     </div>
                 </div>
 
                 <div class="proyecto-acciones">
-                    <button type="button" class="btn-abrir">▶ Open</button>
-                    <button type="button" class="btn-accion-icono"><img src="assets/icons/star.svg" alt="Favorito" /></button>
-                    <button type="button" class="btn-accion-icono"><img src="assets/icons/share.svg" alt="Compartir" /></button>
-                    <button type="button" class="btn-accion-icono btn-eliminar"><img src="assets/icons/delete.svg" alt="Eliminar" /></button>
+                    <button type="button" class="btn-abrir">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M8 5v14l11-7z"/></svg>
+                        Open
+                    </button>
+                    <button type="button" class="btn-accion-icono" aria-label="Favorito">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </button>
+                    <button type="button" class="btn-accion-icono" aria-label="Compartir">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>
+                    </button>
+                    <button type="button" class="btn-accion-icono btn-eliminar" aria-label="Eliminar">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+                    </button>
                 </div>
             </article>
 
@@ -233,9 +265,9 @@
 
         <p class="titulo-panel">COLLABORATORS</p>
         <div class="colaboradores">
-            <img src="assets/images/colaborador-1.jpg" alt="Colaborador" class="colaborador-avatar" />
-            <img src="assets/images/colaborador-2.jpg" alt="Colaborador" class="colaborador-avatar" />
-            <img src="assets/images/colaborador-3.jpg" alt="Colaborador" class="colaborador-avatar" />
+            <div class="colaborador-avatar avatar-iniciales" style="background:#7c2dff;">MC</div>
+            <div class="colaborador-avatar avatar-iniciales" style="background:#df45ff;">LD</div>
+            <div class="colaborador-avatar avatar-iniciales" style="background:#a855f7;">NK</div>
             <span class="colaborador-mas">+5</span>
         </div>
 
@@ -249,18 +281,18 @@
         </div>
 
         <div class="mentor">
-            <img src="assets/images/mentor-avatar.jpg" alt="Joel Zimmerman" class="mentor-avatar" />
+            <div class="mentor-avatar avatar-iniciales" style="background: linear-gradient(135deg,#7e22ce,#a855f7);">JZ</div>
             <div>
                 <p class="mentor-nombre">Joel Zimmerman</p>
-                <p class="mentor-estado">Studio Mentor Online</p>
+                <p class="mentor-estado"><span class="punto-estado" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#22c55e;box-shadow:0 0 6px #22c55e;"></span> Studio Mentor Online</p>
             </div>
         </div>
 
         <div class="mentor-mas-avatares">
-            <img src="assets/images/mini-avatar-1.jpg" alt="" />
-            <img src="assets/images/mini-avatar-2.jpg" alt="" />
-            <img src="assets/images/mini-avatar-3.jpg" alt="" />
-            <img src="assets/images/mini-avatar-4.jpg" alt="" />
+            <div class="avatar-iniciales" style="background:#a855f7;">A</div>
+            <div class="avatar-iniciales" style="background:#df45ff;">C</div>
+            <div class="avatar-iniciales" style="background:#7c2dff;">E</div>
+            <div class="avatar-iniciales" style="background:#c084fc;color:#2b1140;">G</div>
         </div>
 
     </aside>
