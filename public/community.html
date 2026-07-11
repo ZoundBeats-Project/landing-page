@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZoundBeats – Community</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div class="pagina pagina-comunidad">
+
+    <!-- ============================================
+         SIDEBAR
+    ============================================= -->
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <span class="sidebar-logo-icono-svg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </span>
+            <span>ZoundBeats</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="sidebar-link">Dashboard</a>
+            <a href="courses.html" class="sidebar-link">Courses</a>
+            <a href="ai-studio.html" class="sidebar-link">AI Studio</a>
+            <a href="community.html" class="sidebar-link sidebar-link-activo">Community</a>
+            <a href="my-projects.html" class="sidebar-link">My Projects</a>
+        </nav>
+
+        <div class="sidebar-abajo">
+            <a href="profile.html" class="sidebar-link">Profile</a>
+            <a href="settings.html" class="sidebar-link">Settings</a>
+
+            <div class="tarjeta-upgrade">
+                <p>Upgrade to Pro for unlimited AI masterings.</p>
+                <button type="button" class="btn-upgrade">Upgrade Plan</button>
+            </div>
+        </div>
+
+    </aside>
+
+    <!-- ============================================
+         CONTENIDO PRINCIPAL
+    ============================================= -->
+    <main class="contenido">
+
+        <!-- Encabezado -->
+        <header class="encabezado">
+            <div>
+                <h1>Community</h1>
+                <p>Connect, share and grow with fellow producers</p>
+            </div>
+
+            <div class="encabezado-acciones">
+                <div class="buscador">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input type="text" placeholder="Search community..." />
+                </div>
+                <button type="button" class="btn-nueva-publicacion">
+                    <span>+</span> New Post
+                </button>
+                <div class="avatar-usuario avatar-iniciales" style="background: linear-gradient(135deg,#a855f7,#7c2dff);">AR</div>
+            </div>
+        </header>
+
+        <!-- Pestañas -->
+        <section class="barra-superior-lista">
+            <div class="pestañas">
+                <button type="button" class="pestaña pestaña-activa">All Posts</button>
+                <button type="button" class="pestaña">Following</button>
+                <button type="button" class="pestaña">Trending</button>
+                <button type="button" class="pestaña">My Posts</button>
+            </div>
+        </section>
+
+        <!-- Feed de publicaciones -->
+        <section class="lista-posts">
+
+            <!-- Post 1 -->
+            <article class="post-card">
+                <div class="post-encabezado">
+                    <div class="post-avatar avatar-iniciales" style="background:#7c2dff;">MC</div>
+                    <div>
+                        <p class="post-autor-nombre">Maya Chen</p>
+                        <p class="post-autor-meta">@mayachenmusic • 2 hours ago</p>
+                    </div>
+                </div>
+                <p class="post-texto">
+                    Just finished mastering my synthwave EP after 3 months of late nights 🌙 So proud of how "Neon Horizon" turned out. Feedback is always welcome!
+                </p>
+                <div class="post-adjunto">
+                    <span class="post-adjunto-play">
+                        <svg viewBox="0 0 24 24" fill="#ffffff" width="12" height="12"><path d="M8 5v14l11-7z"/></svg>
+                    </span>
+                    <span class="post-adjunto-onda">
+                        <svg viewBox="0 0 300 32" preserveAspectRatio="none"><path d="M0 16 C10 4,20 28,30 16 S50 2,60 16 S80 30,90 16 S110 4,120 16 S140 28,150 16 S170 4,180 16 S200 28,210 16 S230 4,240 16 S260 28,270 16 S290 6,300 16" fill="none" stroke="#a855f7" stroke-width="2"/></svg>
+                    </span>
+                    <span class="post-adjunto-nombre">Neon Horizon – Master v3</span>
+                </div>
+                <div class="post-etiquetas">
+                    <span class="post-etiqueta">#Synthwave</span>
+                    <span class="post-etiqueta">#Mastering</span>
+                </div>
+                <div class="post-acciones">
+                    <button type="button" class="post-accion post-accion-like activo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+                        128
+                    </button>
+                    <button type="button" class="post-accion">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        34
+                    </button>
+                    <button type="button" class="post-accion">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>
+                        12
+                    </button>
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="post-card">
+                <div class="post-encabezado">
+                    <div class="post-avatar avatar-iniciales" style="background:#df45ff;">DR</div>
+                    <div>
+                        <p class="post-autor-nombre">DJ Ricochet</p>
+                        <p class="post-autor-meta">@djricochet • 5 hours ago</p>
+                    </div>
+                </div>
+                <p class="post-texto">
+                    Quick tip 💡: layering two saw waves detuned by 7 cents instantly adds width to your lead synths. Try it on your next bassline too!
+                </p>
+                <div class="post-etiquetas">
+                    <span class="post-etiqueta">#ProductionTip</span>
+                    <span class="post-etiqueta">#SoundDesign</span>
+                </div>
+                <div class="post-acciones">
+                    <button type="button" class="post-accion">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+                        89
+                    </button>
+                    <button type="button" class="post-accion">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        21
+                    </button>
+                    <button type="button" class="post-accion">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>
+                        30
+                    </button>
+                </div>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="post-card">
+                <div class="post-encabezado">
+                    <div class="post-avatar avatar-iniciales" style="background:#a855f7;">NK</div>
+                    <div>
+                        <p class="post-autor-nombre">Nia Kobo</p>
+                        <p class="post-autor-meta">@niakobo • Yesterday</p>
+                    </div>
+                </div>
+                <p class="post-texto">
+                    Looking for a vocalist for a lo-fi collab 🎤 Chill, dreamy vibes similar to Midnight Drive. Drop a comment or DM me if you're interested!
+                </p>
+                <div class="post-etiquetas">
+                    <span class="post-etiqueta">#Collab</span>
+                    <span class="post-etiqueta">#LoFi</span>
+                </div>
+                <div class="post-acciones">
+                    <button type="button" class="post-accion">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+                        45
+                    </button>
+                    <button type="button" class="post-accion">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        58
+                    </button>
+                    <button type="button" class="post-accion">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>
+                        9
+                    </button>
+                </div>
+            </article>
+
+            <!-- Post 4 -->
+            <article class="post-card">
+                <div class="post-encabezado">
+                    <div class="post-avatar avatar-iniciales" style="background:#7e22ce;">LD</div>
+                    <div>
+                        <p class="post-autor-nombre">Leo Diaz</p>
+                        <p class="post-autor-meta">@leodiazbeats • 2 days ago</p>
+                    </div>
+                </div>
+                <p class="post-texto">
+                    New industrial techno sample pack just dropped 🔊 40 loops, 20 one-shots, all recorded through analog gear. Link in my profile!
+                </p>
+                <div class="post-adjunto">
+                    <span class="post-adjunto-play">
+                        <svg viewBox="0 0 24 24" fill="#ffffff" width="12" height="12"><path d="M8 5v14l11-7z"/></svg>
+                    </span>
+                    <span class="post-adjunto-onda">
+                        <svg viewBox="0 0 300 32" preserveAspectRatio="none"><path d="M0 16 L8 2 L16 30 L24 6 L32 26 L40 4 L48 28 L56 6 L64 26 L72 4 L80 28 L88 6 L96 24 L104 4 L112 28 L120 6 L128 24 L136 4 L144 28 L152 6 L160 22 L168 4 L176 28 L184 8 L192 22 L200 4 L208 28 L216 8 L224 22 L232 6 L240 26 L248 8 L256 22 L264 6 L272 26 L280 8 L288 22 L300 16" fill="none" stroke="#facc15" stroke-width="1.5" opacity="0.9"/></svg>
+                    </span>
+                    <span class="post-adjunto-nombre">Cyber Ritual – Preview</span>
+                </div>
+                <div class="post-etiquetas">
+                    <span class="post-etiqueta">#Industrial</span>
+                    <span class="post-etiqueta">#Techno</span>
+                </div>
+                <div class="post-acciones">
+                    <button type="button" class="post-accion">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+                        203
+                    </button>
+                    <button type="button" class="post-accion">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        47
+                    </button>
+                    <button type="button" class="post-accion">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>
+                        26
+                    </button>
+                </div>
+            </article>
+
+            <button type="button" class="cargar-mas">LOAD MORE POSTS</button>
+
+        </section>
+
+    </main>
+
+    <!-- ============================================
+         PANEL DERECHO
+    ============================================= -->
+    <aside class="panel-derecho">
+
+        <p class="titulo-panel">COMMUNITY STATS</p>
+        <div class="stats-grid">
+            <div class="stat-caja">
+                <span class="stat-label">MEMBERS</span>
+                <span class="stat-numero">12.4K</span>
+            </div>
+            <div class="stat-caja">
+                <span class="stat-label">POSTS TODAY</span>
+                <span class="stat-numero">86</span>
+            </div>
+        </div>
+
+        <p class="titulo-panel">TRENDING TOPICS</p>
+        <div class="trending-lista">
+            <div class="trending-item">
+                <span class="trending-rango">1</span>
+                <div class="trending-info">
+                    <p class="trending-tag">#Synthwave</p>
+                    <p class="trending-conteo">2.3K posts</p>
+                </div>
+            </div>
+            <div class="trending-item">
+                <span class="trending-rango">2</span>
+                <div class="trending-info">
+                    <p class="trending-tag">#MixdownMonday</p>
+                    <p class="trending-conteo">1.8K posts</p>
+                </div>
+            </div>
+            <div class="trending-item">
+                <span class="trending-rango">3</span>
+                <div class="trending-info">
+                    <p class="trending-tag">#AIProduction</p>
+                    <p class="trending-conteo">1.2K posts</p>
+                </div>
+            </div>
+            <div class="trending-item">
+                <span class="trending-rango">4</span>
+                <div class="trending-info">
+                    <p class="trending-tag">#VocalChop</p>
+                    <p class="trending-conteo">940 posts</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="titulo-panel">TOP CONTRIBUTORS</p>
+        <div class="contribuidor-lista">
+            <div class="contribuidor-item">
+                <div class="contribuidor-avatar avatar-iniciales" style="background:#a855f7;">MC</div>
+                <div>
+                    <p class="contribuidor-nombre">Maya Chen</p>
+                    <p class="contribuidor-puntos">4,210 pts</p>
+                </div>
+            </div>
+            <div class="contribuidor-item">
+                <div class="contribuidor-avatar avatar-iniciales" style="background:#df45ff;">DR</div>
+                <div>
+                    <p class="contribuidor-nombre">DJ Ricochet</p>
+                    <p class="contribuidor-puntos">3,875 pts</p>
+                </div>
+            </div>
+            <div class="contribuidor-item">
+                <div class="contribuidor-avatar avatar-iniciales" style="background:#7c2dff;">LD</div>
+                <div>
+                    <p class="contribuidor-nombre">Leo Diaz</p>
+                    <p class="contribuidor-puntos">3,140 pts</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tarjeta-tip">
+            <p class="tip-encabezado"><span class="tip-icono">📋</span> COMMUNITY GUIDELINES</p>
+            <p class="tip-texto">
+                Be respectful, credit collaborators, and keep feedback <strong>constructive</strong>. Let's build a great scene together.
+            </p>
+            <a href="#" class="link-aprender-mas">READ MORE</a>
+        </div>
+
+    </aside>
+
+</div>
+
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>

@@ -4394,3 +4394,407 @@ a {
 .mentor-mas-avatares .avatar-iniciales:first-child {
     margin-left: 0;
 }
+
+/* =========================================================
+   community.css — ZoundBeats Community
+   ========================================================= */
+
+.pagina-comunidad {
+    grid-template-columns: 260px 1fr 320px;
+}
+
+.lista-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.post-card {
+    background-color: #0d0912;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.post-encabezado {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.post-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    font-size: 15px;
+}
+
+.post-autor-nombre {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.post-autor-meta {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-top: 2px;
+}
+
+.post-texto {
+    font-size: 14px;
+    line-height: 1.65;
+    color: #e5e7eb;
+    margin-bottom: 14px;
+}
+
+.post-adjunto {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #050507;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-bottom: 14px;
+}
+
+.post-adjunto-play {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #a855f7, #7e22ce);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.post-adjunto-onda {
+    flex: 1;
+    height: 32px;
+    overflow: hidden;
+}
+
+.post-adjunto-onda svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.post-adjunto-nombre {
+    font-size: 12.5px;
+    color: #d1d5db;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.post-etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.post-etiqueta {
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #c084fc;
+    background-color: rgba(168, 85, 247, 0.1);
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.post-acciones {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.post-accion {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    color: #9ca3af;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.post-accion svg {
+    width: 16px;
+    height: 16px;
+}
+
+.post-accion:hover {
+    color: #d1d5db;
+}
+
+.post-accion-like.activo {
+    color: #f472b6;
+}
+
+.post-accion-like.activo svg {
+    stroke: #f472b6;
+    fill: #f472b6;
+}
+
+.cargar-mas {
+    display: block;
+    text-align: center;
+    margin: 6px auto 0;
+    padding: 14px;
+    color: #c084fc;
+    font-weight: 700;
+    font-size: 12.5px;
+    letter-spacing: 0.5px;
+    background-color: #0d0912;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 14px;
+    width: 100%;
+}
+
+/* --- Panel derecho: comunidad --- */
+.trending-lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.trending-item:last-child {
+    border-bottom: none;
+}
+
+.trending-rango {
+    font-size: 13px;
+    font-weight: 800;
+    color: #4b5563;
+    width: 16px;
+    flex-shrink: 0;
+}
+
+.trending-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.trending-tag {
+    font-size: 13px;
+    font-weight: 700;
+    color: #e5e7eb;
+}
+
+.trending-conteo {
+    font-size: 11px;
+    color: #9ca3af;
+    margin-top: 1px;
+}
+
+.contribuidor-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contribuidor-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contribuidor-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    font-size: 12px;
+}
+
+.contribuidor-nombre {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.contribuidor-puntos {
+    font-size: 11.5px;
+    color: #c084fc;
+    margin-top: 1px;
+}
+
+.btn-nueva-publicacion {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 11px 18px;
+    background: linear-gradient(135deg, #a855f7, #7e22ce);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.btn-nueva-publicacion span {
+    font-size: 16px;
+    line-height: 1;
+}
+
+/* =========================================================
+   profile.css — ZoundBeats Profile
+   ========================================================= */
+
+.perfil-banner {
+    position: relative;
+    height: 160px;
+    border-radius: 18px;
+    background: linear-gradient(120deg, #7e22ce, #a855f7 45%, #df45ff);
+    margin-bottom: 56px;
+    overflow: hidden;
+}
+
+.perfil-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.2), transparent 55%);
+}
+
+.perfil-avatar-grande {
+    position: absolute;
+    left: 32px;
+    bottom: -40px;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    border: 5px solid #050507;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.perfil-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.perfil-info h1 {
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+.perfil-handle {
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+.perfil-bio {
+    color: #d1d5db;
+    font-size: 13.5px;
+    margin-top: 10px;
+    max-width: 520px;
+    line-height: 1.6;
+}
+
+.perfil-acciones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.perfil-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.perfil-stats-grid .stat-caja {
+    background-color: #0d0912;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.perfil-stats-grid .stat-numero {
+    font-size: 22px;
+}
+
+.logros-fila {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+
+.logro-insignia {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0d0912;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 30px;
+    padding: 7px 16px 7px 7px;
+}
+
+.logro-icono {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    flex-shrink: 0;
+}
+
+.logro-texto {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #e5e7eb;
+}
+
+@media (max-width: 900px) {
+    .perfil-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1200px) {
+    .pagina-comunidad {
+        grid-template-columns: 220px 1fr;
+    }
+    .pagina-comunidad .panel-derecho {
+        grid-column: 1 / -1;
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+}
+
+@media (max-width: 720px) {
+    .pagina-comunidad {
+        grid-template-columns: 1fr;
+    }
+}
