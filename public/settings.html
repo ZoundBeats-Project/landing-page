@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZoundBeats – Configuración</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div class="pagina">
+
+    <!-- ============================================
+         SIDEBAR
+    ============================================= -->
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <span class="sidebar-logo-icono-svg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </span>
+            <span>ZoundBeats</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="dash-nav-item">🏠 Panel</a>
+            <a href="course-catalog.html" class="dash-nav-item">🎓 Cursos</a>
+            <a href="ai-studio.html" class="dash-nav-item">🤖 Estudio IA <span class="dash-badge-nuevo">NUEVO</span></a>
+            <a href="community.html" class="dash-nav-item">👥 Comunidad</a>
+            <a href="my-projects.html" class="dash-nav-item">📁 Mis Proyectos</a>
+        </nav>
+
+        <div class="dash-nav-abajo">
+            <a href="profile.html" class="dash-nav-item">👤 Perfil</a>
+            <a href="settings.html" class="dash-nav-item activo">⚙️ Configuración</a>
+
+            <div class="dash-upgrade-box">
+                <p>Actualiza a Pro para masterizaciones ilimitadas con IA.</p>
+                <button class="btn-upgrade">Actualizar plan</button>
+            </div>
+        </div>
+
+    </aside>
+
+    <!-- ============================================
+         CONTENIDO PRINCIPAL
+    ============================================= -->
+    <main class="contenido">
+
+        <!-- Encabezado -->
+        <header class="encabezado">
+            <div>
+                <h1>Configuración</h1>
+                <p>Administra tu cuenta y tus preferencias</p>
+            </div>
+        </header>
+
+        <div style="max-width: 640px;">
+
+            <!-- Cuenta -->
+            <section class="config-seccion">
+                <p class="config-seccion-titulo">Cuenta</p>
+                <p class="config-seccion-desc">Actualiza tu información personal y de contacto.</p>
+
+                <div class="config-avatar-fila">
+                    <div class="avatar-usuario avatar-iniciales" style="background: linear-gradient(135deg,#a855f7,#7c2dff);">AR</div>
+                    <div class="config-avatar-info">
+                        <p>Alex Rivera</p>
+                        <p>@alexrivera</p>
+                    </div>
+                </div>
+
+                <div class="config-grid-2">
+                    <div class="config-campo">
+                        <label>Nombre</label>
+                        <input type="text" class="config-input" value="Alex Rivera" />
+                    </div>
+                    <div class="config-campo">
+                        <label>Usuario</label>
+                        <input type="text" class="config-input" value="alexrivera" />
+                    </div>
+                </div>
+
+                <div class="config-campo">
+                    <label>Correo electrónico</label>
+                    <input type="email" class="config-input" value="alex.rivera@email.com" />
+                </div>
+
+                <div class="config-campo">
+                    <label>Ubicación</label>
+                    <input type="text" class="config-input" value="Lima, Perú" />
+                </div>
+
+                <div class="config-guardar-fila">
+                    <button type="button" class="btn-primario">Guardar cambios</button>
+                </div>
+            </section>
+
+            <!-- Contraseña -->
+            <section class="config-seccion">
+                <p class="config-seccion-titulo">Contraseña</p>
+                <p class="config-seccion-desc">Usa una contraseña segura que no utilices en otros sitios.</p>
+
+                <div class="config-campo">
+                    <label>Contraseña actual</label>
+                    <input type="password" class="config-input" placeholder="••••••••" />
+                </div>
+
+                <div class="config-grid-2">
+                    <div class="config-campo">
+                        <label>Nueva contraseña</label>
+                        <input type="password" class="config-input" placeholder="••••••••" />
+                    </div>
+                    <div class="config-campo">
+                        <label>Confirmar contraseña</label>
+                        <input type="password" class="config-input" placeholder="••••••••" />
+                    </div>
+                </div>
+
+                <div class="config-guardar-fila">
+                    <button type="button" class="btn-primario">Actualizar contraseña</button>
+                </div>
+            </section>
+
+            <!-- Notificaciones -->
+            <section class="config-seccion">
+                <p class="config-seccion-titulo">Notificaciones</p>
+                <p class="config-seccion-desc">Elige qué notificaciones quieres recibir.</p>
+
+                <div class="config-fila-toggle">
+                    <div class="config-toggle-texto">
+                        <strong>Notificaciones por correo</strong>
+                        <span>Resúmenes semanales y novedades importantes</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="switch-slider"></span>
+                    </label>
+                </div>
+
+                <div class="config-fila-toggle">
+                    <div class="config-toggle-texto">
+                        <strong>Notificaciones push</strong>
+                        <span>Alertas en tiempo real en tu dispositivo</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="switch-slider"></span>
+                    </label>
+                </div>
+
+                <div class="config-fila-toggle">
+                    <div class="config-toggle-texto">
+                        <strong>Menciones en la comunidad</strong>
+                        <span>Cuando alguien te mencione o comente tu publicación</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="switch-slider"></span>
+                    </label>
+                </div>
+
+                <div class="config-fila-toggle">
+                    <div class="config-toggle-texto">
+                        <strong>Novedades del producto</strong>
+                        <span>Nuevas funciones y actualizaciones de ZoundBeats</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" />
+                        <span class="switch-slider"></span>
+                    </label>
+                </div>
+            </section>
+
+            <!-- Apariencia -->
+            <section class="config-seccion">
+                <p class="config-seccion-titulo">Apariencia</p>
+                <p class="config-seccion-desc">Elige cómo se ve ZoundBeats en tu pantalla.</p>
+
+                <div class="config-tema-opciones">
+                    <button type="button" class="config-tema-card activo">
+                        <div class="config-tema-preview config-tema-preview-oscuro"></div>
+                        <span>Oscuro</span>
+                    </button>
+                    <button type="button" class="config-tema-card">
+                        <div class="config-tema-preview config-tema-preview-claro"></div>
+                        <span>Claro</span>
+                    </button>
+                    <button type="button" class="config-tema-card">
+                        <div class="config-tema-preview config-tema-preview-sistema"></div>
+                        <span>Sistema</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Zona de peligro -->
+            <section class="config-seccion config-zona-peligro">
+                <p class="config-seccion-titulo">Zona de peligro</p>
+                <p class="config-seccion-desc">Esta acción es permanente y no se puede deshacer.</p>
+
+                <button type="button" class="btn-peligro">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+                    Eliminar cuenta
+                </button>
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>

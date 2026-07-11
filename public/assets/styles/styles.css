@@ -4798,3 +4798,276 @@ a {
         grid-template-columns: 1fr;
     }
 }
+
+/* --- Complementos del sidebar tipo "dash" (usado en Perfil/Comunidad) --- */
+.dash-badge-nuevo {
+    margin-left: auto;
+    font-size: 10px;
+    font-weight: 700;
+    background-color: rgba(168, 85, 247, 0.2);
+    color: #c084fc;
+    padding: 2px 8px;
+    border-radius: 20px;
+}
+
+.dash-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.dash-upgrade-box {
+    margin-top: 20px;
+    background-color: #110d1a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.dash-upgrade-box p {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-bottom: 12px;
+}
+
+/* =========================================================
+   settings.css — ZoundBeats Settings
+   ========================================================= */
+
+.config-seccion {
+    background-color: #0d0912;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.config-seccion-titulo {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.config-seccion-desc {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-bottom: 20px;
+}
+
+.config-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.config-campo label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #9ca3af;
+    letter-spacing: 0.3px;
+}
+
+.config-input {
+    background-color: #15101d;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 11px 14px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.config-input:focus {
+    outline: none;
+    border-color: rgba(168, 85, 247, 0.5);
+}
+
+.config-input::placeholder {
+    color: #6b7280;
+}
+
+.config-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.config-avatar-fila {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.config-avatar-fila .avatar-usuario {
+    width: 64px;
+    height: 64px;
+    font-size: 20px;
+}
+
+.config-avatar-info p:first-child {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.config-avatar-info p:last-child {
+    font-size: 12.5px;
+    color: #9ca3af;
+    margin-top: 2px;
+}
+
+.config-fila-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    gap: 16px;
+}
+
+.config-fila-toggle:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.config-fila-toggle:first-child {
+    padding-top: 0;
+}
+
+.config-toggle-texto strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #e5e7eb;
+}
+
+.config-toggle-texto span {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch-slider {
+    position: absolute;
+    inset: 0;
+    background-color: #3f3a4a;
+    border-radius: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.switch-slider::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 3px;
+    top: 3px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.switch input:checked + .switch-slider {
+    background: linear-gradient(135deg, #a855f7, #7e22ce);
+}
+
+.switch input:checked + .switch-slider::before {
+    transform: translateX(18px);
+}
+
+.config-tema-opciones {
+    display: flex;
+    gap: 12px;
+}
+
+.config-tema-card {
+    flex: 1;
+    border: 1.5px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 14px;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    color: #d1d5db;
+    font-family: inherit;
+}
+
+.config-tema-card.activo {
+    border-color: #a855f7;
+    background-color: rgba(168, 85, 247, 0.08);
+    color: #ffffff;
+}
+
+.config-tema-preview {
+    height: 48px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.config-tema-preview-oscuro {
+    background: linear-gradient(135deg, #0a0810, #1a1425);
+}
+
+.config-tema-preview-claro {
+    background: linear-gradient(135deg, #f3f0ff, #ffffff);
+}
+
+.config-tema-preview-sistema {
+    background: linear-gradient(90deg, #0a0810 50%, #f3f0ff 50%);
+}
+
+.config-tema-card span {
+    font-size: 12.5px;
+    font-weight: 600;
+}
+
+.config-zona-peligro {
+    border-color: rgba(239, 68, 68, 0.25);
+}
+
+.config-zona-peligro .config-seccion-titulo {
+    color: #f87171;
+}
+
+.btn-peligro {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background-color: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 10px;
+    color: #f87171;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.config-guardar-fila {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+@media (max-width: 720px) {
+    .config-grid-2,
+    .config-tema-opciones {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+}
