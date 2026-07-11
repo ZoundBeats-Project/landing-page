@@ -79,3 +79,163 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// ---------------------------------------------------
+// main.js - funciones basicas de la pagina
+// ---------------------------------------------------
+
+// Mostrar u ocultar la contraseña al darle click al ojito
+function togglePassword(idInput, boton) {
+    const input = document.getElementById(idInput);
+    if (input.type === "password") {
+        input.type = "text";
+        boton.textContent = "🙈";
+    } else {
+        input.type = "password";
+        boton.textContent = "👁️";
+    }
+}
+
+// Redirige a la pantalla de Google al darle click en el boton "Google"
+function irAGoogle() {
+    window.location.href = "google-login.html";
+}
+
+// Redirige a la pantalla de Apple al darle click en el boton "Apple"
+function irAApple() {
+    window.location.href = "apple-login.html";
+}
+
+// Redirige al dashboard cuando se elige una cuenta o se le da continuar
+function irADashboard() {
+    window.location.href = "dashboard.html";
+}
+
+// Cuando el usuario elige una cuenta en la pantalla de Google
+// simplemente lo mandamos directo al dashboard (como si ya inicio sesion)
+function seleccionarCuenta(elemento) {
+    irADashboard();
+}
+
+// Redirige a la pantalla de detalle del curso al hacer click en un curso del dashboard
+function irACurso() {
+    window.location.href = "course-detail.html";
+}
+
+// =========================================================
+// studio.js — ZoundBeats AI Studio
+// JavaScript básico y sencillo
+// =========================================================
+
+// 1. Seleccionar un "pill" (Cyberpunk / Industrial, etc.)
+// Cuando el usuario hace clic en un botón, le ponemos la clase
+// "pill-activo" a ese y se la quitamos a sus hermanos.
+let pills = document.querySelectorAll(".pill");
+
+for (let i = 0; i < pills.length; i++) {
+    pills[i].addEventListener("click", function () {
+        let grupo = this.parentElement;
+        let botonesDelGrupo = grupo.querySelectorAll(".pill");
+
+        for (let j = 0; j < botonesDelGrupo.length; j++) {
+            botonesDelGrupo[j].classList.remove("pill-activo");
+        }
+
+        this.classList.add("pill-activo");
+    });
+}
+
+// 2. Botones "GENERATE"
+// Por ahora solo muestran un mensaje en la consola.
+// Aquí después puedes poner tu código para generar el audio.
+let botonesGenerar = document.querySelectorAll(".btn-generar");
+
+for (let i = 0; i < botonesGenerar.length; i++) {
+    botonesGenerar[i].addEventListener("click", function () {
+        console.log("Generando...");
+    });
+}
+
+// 3. Enviar mensaje al AI Assistant
+let inputIA = document.querySelector(".ia-input input");
+let botonEnviarIA = document.querySelector(".btn-enviar-ia");
+
+botonEnviarIA.addEventListener("click", function () {
+    let mensaje = inputIA.value;
+    console.log("Mensaje enviado: " + mensaje);
+    inputIA.value = "";
+});
+
+// =========================================================
+// courses.js — ZoundBeats Course Catalog
+// JavaScript básico y sencillo
+// =========================================================
+
+// Seleccionar una categoría (All, Production, Mixing, etc.)
+// Le ponemos la clase activa al botón que se hizo clic y se la
+// quitamos a los demás botones del mismo grupo.
+let filtrosCategoria = document.querySelectorAll(".filtro-pill");
+
+for (let i = 0; i < filtrosCategoria.length; i++) {
+    filtrosCategoria[i].addEventListener("click", function () {
+        for (let j = 0; j < filtrosCategoria.length; j++) {
+            filtrosCategoria[j].classList.remove("filtro-pill-activo");
+        }
+        this.classList.add("filtro-pill-activo");
+    });
+}
+
+// Seleccionar precio (All, Free, Paid)
+let filtrosPrecio = document.querySelectorAll(".filtro-caja-opcion");
+
+for (let i = 0; i < filtrosPrecio.length; i++) {
+    filtrosPrecio[i].addEventListener("click", function () {
+        for (let j = 0; j < filtrosPrecio.length; j++) {
+            filtrosPrecio[j].classList.remove("filtro-caja-activo");
+        }
+        this.classList.add("filtro-caja-activo");
+    });
+}
+
+// =========================================================
+// my-projects.js — ZoundBeats My Projects
+// JavaScript básico y sencillo
+// =========================================================
+
+// Cambiar de pestaña (All Projects, Drafts, Finished, Cloud Storage)
+let pestañas = document.querySelectorAll(".pestaña");
+
+for (let i = 0; i < pestañas.length; i++) {
+    pestañas[i].addEventListener("click", function () {
+        for (let j = 0; j < pestañas.length; j++) {
+            pestañas[j].classList.remove("pestaña-activa");
+        }
+        this.classList.add("pestaña-activa");
+    });
+}
+
+// Botón "Open" de cada proyecto
+// Por ahora solo muestra el nombre en la consola.
+let botonesAbrir = document.querySelectorAll(".btn-abrir");
+
+for (let i = 0; i < botonesAbrir.length; i++) {
+    botonesAbrir[i].addEventListener("click", function () {
+        let tarjeta = this.closest(".proyecto-card");
+        let nombre = tarjeta.querySelector("h3").textContent;
+        console.log("Abriendo proyecto: " + nombre);
+        // TODO: aquí puedes redirigir al AI Studio con ese proyecto cargado
+    });
+}
+
+// Botón de eliminar (con una confirmación simple)
+let botonesEliminar = document.querySelectorAll(".btn-eliminar");
+
+for (let i = 0; i < botonesEliminar.length; i++) {
+    botonesEliminar[i].addEventListener("click", function () {
+        let confirmar = confirm("¿Seguro que quieres eliminar este proyecto?");
+        if (confirmar) {
+            let tarjeta = this.closest(".proyecto-card");
+            tarjeta.remove();
+        }
+    });
+}

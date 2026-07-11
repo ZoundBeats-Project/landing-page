@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZoundBeats – Serum Essentials: Diseño de Sonido Avanzado</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div class="dash-layout">
+
+    <!-- Barra lateral (igual que en el dashboard) -->
+    <aside class="dash-sidebar">
+        <div class="auth-logo" style="margin-bottom: 40px;">
+            <span class="auth-logo-icono">🎵</span>
+            <span class="auth-logo-texto" style="font-size: 18px;">ZoundBeats</span>
+        </div>
+
+        <nav class="dash-nav">
+            <a href="dashboard.html" class="dash-nav-item">🏠 Panel</a>
+            <a href="#" class="dash-nav-item activo">🎓 Cursos</a>
+            <a href="#" class="dash-nav-item">🤖 Estudio IA</a>
+            <a href="#" class="dash-nav-item">👥 Comunidad</a>
+            <a href="#" class="dash-nav-item">📁 Mis Proyectos</a>
+        </nav>
+
+        <div class="dash-nav-abajo">
+            <a href="#" class="dash-nav-item">👤 Perfil</a>
+            <a href="#" class="dash-nav-item">⚙️ Configuración</a>
+        </div>
+    </aside>
+
+    <!-- Contenido principal: info del curso -->
+    <main class="curso-contenido">
+
+        <!-- Encabezado del curso -->
+        <div class="curso-encabezado">
+            <div>
+                <span class="curso-etiqueta">AVANZADO</span>
+                <span class="curso-categoria">Diseño y Síntesis</span>
+                <h1 class="curso-titulo">Serum Essentials: Diseño de Sonido Avanzado</h1>
+            </div>
+            <button class="btn-social curso-btn-wishlist">🤍 Guardar en lista de deseos</button>
+        </div>
+
+        <!-- Video / preview del curso -->
+        <div class="curso-video">
+            <div class="curso-video-controles">
+                <button class="curso-play">▶</button>
+                <span class="curso-tiempo">14:22 / 45:00</span>
+            </div>
+            <div class="curso-barra-progreso">
+                <div class="curso-barra-relleno" style="width: 32%;"></div>
+            </div>
+        </div>
+
+        <!-- Pestañas -->
+        <div class="curso-tabs">
+            <span class="curso-tab activo">Resumen</span>
+            <span class="curso-tab">Módulos</span>
+            <span class="curso-tab">Recursos</span>
+            <span class="curso-tab">Reseñas (142)</span>
+        </div>
+
+        <h2 class="dash-subtitulo" style="margin-top: 28px;">Sobre este curso</h2>
+        <p class="curso-descripcion">
+            Desbloquea todo el potencial de Xfer Serum. En esta masterclass completa,
+            profundizamos en la manipulación avanzada de wavetables, los secretos de la
+            síntesis FM y la creación de osciladores de ruido personalizados. Aprende a
+            construir texturas complejas, bajos agresivos y pads etéreos desde cero.
+        </p>
+
+        <h2 class="dash-subtitulo" style="margin-top: 28px;">Módulos del curso</h2>
+
+        <div class="curso-modulo">
+            <span class="curso-modulo-num">01</span>
+            <div class="curso-modulo-info">
+                <strong>Introducción a los Modos Warp</strong>
+                <small>Video • 12 minutos</small>
+            </div>
+            <span class="curso-modulo-estado completado">Completado</span>
+        </div>
+
+        <div class="curso-modulo actual">
+            <span class="curso-modulo-num">02</span>
+            <div class="curso-modulo-info">
+                <strong>Síntesis Avanzada FM y AM</strong>
+                <small>Video • 45 minutos</small>
+            </div>
+            <span class="curso-modulo-estado">Reproduciendo Ahora 🔊</span>
+        </div>
+
+        <div class="curso-modulo bloqueado">
+            <span class="curso-modulo-num">03</span>
+            <div class="curso-modulo-info">
+                <strong>Creación de Wavetables Personalizadas desde Audio</strong>
+                <small>Video • 28 minutos</small>
+            </div>
+            <span class="curso-modulo-estado">🔒</span>
+        </div>
+
+    </main>
+
+    <!-- Panel derecho: precio, instructor -->
+    <aside class="dash-panel-derecho">
+
+        <div class="dash-card curso-precio-card">
+            <div class="curso-precio-fila">
+                <span class="curso-precio">$149</span>
+                <span class="curso-precio-tachado">$299</span>
+                <span class="curso-descuento">50% DE DESCUENTO</span>
+            </div>
+            <button class="btn-principal" onclick="alert('Curso inscrito (demo)')">Inscribirse Ahora</button>
+            <button class="btn-social" style="width: 100%; margin-top: 10px;">Probar Vista Previa Gratis</button>
+            <p class="curso-garantia">Garantía de devolución de 30 días</p>
+
+            <p class="curso-incluye-titulo">ESTE CURSO INCLUYE:</p>
+            <ul class="curso-incluye-lista">
+                <li>🎬 18 horas de video bajo demanda</li>
+                <li>📄 24 recursos descargables</li>
+                <li>♾️ Acceso completo de por vida</li>
+                <li>🏅 Certificado de finalización</li>
+            </ul>
+        </div>
+
+        <div class="dash-card">
+            <p class="curso-instructor-titulo">INSTRUCTOR</p>
+            <div class="curso-instructor-fila">
+                <span class="google-avatar avatar-2">J</span>
+                <div>
+                    <strong>Joel Zimmerman</strong>
+                    <p class="curso-instructor-rol">Deadmau5 • Artista Electrónico</p>
+                </div>
+            </div>
+            <p class="dash-card-texto" style="margin-top: 14px;">
+                Productor de renombre mundial y pionero del progressive house,
+                reconocido por su diseño de sonido complejo y su experiencia técnica.
+            </p>
+            <button class="btn-social" style="width: 100%;">Ver Perfil</button>
+        </div>
+
+    </aside>
+
+</div>
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>

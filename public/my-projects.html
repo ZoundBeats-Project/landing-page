@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZoundBeats – My Projects</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div class="pagina pagina-proyectos">
+
+    <!-- ============================================
+         SIDEBAR
+    ============================================= -->
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <span class="sidebar-logo-icono-svg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </span>
+            <span>ZoundBeats</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="dash-nav-item">🏠 Panel</a>
+            <a href="course-catalog.html" class="dash-nav-item">🎓 Cursos</a>
+            <a href="ai-studio.html" class="dash-nav-item">🤖 Estudio IA <span class="dash-badge-nuevo">NUEVO</span></a>
+            <a href="community.html" class="dash-nav-item">👥 Comunidad</a>
+            <a href="my-projects.html" class="dash-nav-item activo">📁 Mis Proyectos</a>
+        </nav>
+
+        <div class="dash-nav-abajo">
+            <a href="profile.html" class="dash-nav-item">👤 Perfil</a>
+            <a href="settings.html" class="dash-nav-item">⚙️ Configuración</a>
+
+            <div class="dash-upgrade-box">
+                <p>Actualiza a Pro para masterizaciones ilimitadas con IA.</p>
+                <button class="btn-upgrade">Actualizar plan</button>
+            </div>
+        </div>
+
+    </aside>
+
+    <!-- ============================================
+         CONTENIDO PRINCIPAL
+    ============================================= -->
+    <main class="contenido">
+
+        <!-- Encabezado -->
+        <header class="encabezado">
+            <div>
+                <h1>My Projects</h1>
+                <p>Manage and edit your creative library</p>
+            </div>
+
+            <div class="encabezado-acciones">
+                <div class="buscador">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input type="text" placeholder="Search projects..." />
+                </div>
+                <button type="button" class="btn-nuevo-proyecto">
+                    <span>+</span> New Project
+                </button>
+                <div class="avatar-usuario avatar-iniciales" style="background: linear-gradient(135deg,#a855f7,#7c2dff);">AR</div>
+            </div>
+        </header>
+
+        <!-- Pestañas + almacenamiento -->
+        <section class="barra-superior-lista">
+
+            <div class="pestañas">
+                <button type="button" class="pestaña pestaña-activa">All Projects</button>
+                <button type="button" class="pestaña">Drafts</button>
+                <button type="button" class="pestaña">Finished</button>
+                <button type="button" class="pestaña">Cloud Storage</button>
+            </div>
+
+            <div class="tarjeta-storage">
+                <span class="storage-icono">☁️</span>
+                <div class="storage-info">
+                    <div class="storage-titulo">
+                        <span>CLOUD STORAGE</span>
+                        <span class="storage-porcentaje">42% Used</span>
+                    </div>
+                    <div class="barra-progreso">
+                        <div class="barra-progreso-relleno" style="width: 42%;"></div>
+                    </div>
+                    <p class="storage-detalle">4.2GB of 10GB used</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Lista de proyectos -->
+        <section class="lista-proyectos">
+
+            <!-- Proyecto 1 -->
+            <article class="proyecto-card proyecto-card-activa">
+                <div class="proyecto-waveform">
+                    <svg viewBox="0 0 220 96" preserveAspectRatio="none">
+                        <rect width="220" height="96" fill="#050507" />
+                        <path d="M0 48 C10 20, 20 76, 30 48 S50 12, 60 48 S80 84, 90 48 S110 16, 120 48 S140 80, 150 48 S170 20, 180 48 S200 78, 220 48" fill="none" stroke="#a855f7" stroke-width="2.5" opacity="0.9"/>
+                        <path d="M0 48 C10 30, 20 66, 30 48 S50 24, 60 48 S80 72, 90 48 S110 28, 120 48 S140 70, 150 48 S170 30, 180 48 S200 66, 220 48" fill="none" stroke="#df45ff" stroke-width="1.5" opacity="0.5"/>
+                    </svg>
+                    <span class="proyecto-estado estado-verde">
+                        <span class="punto-estado"></span> READY TO EXPORT
+                    </span>
+                </div>
+
+                <div class="proyecto-info">
+                    <div class="proyecto-titulo">
+                        <h3>Neon Dreams</h3>
+                        <span class="etiqueta-genero">SYNTHWAVE</span>
+                    </div>
+                    <div class="proyecto-detalles">
+                        <span>📅 Updated 2 hours ago</span>
+                        <span>⏱️ 03:24</span>
+                        <span>🎵 128 BPM • Fm</span>
+                    </div>
+                </div>
+
+                <div class="proyecto-acciones">
+                    <button type="button" class="btn-abrir">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M8 5v14l11-7z"/></svg>
+                        Open
+                    </button>
+                    <button type="button" class="btn-accion-icono" aria-label="Favorito">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </button>
+                    <button type="button" class="btn-accion-icono" aria-label="Compartir">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>
+                    </button>
+                    <button type="button" class="btn-accion-icono btn-eliminar" aria-label="Eliminar">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Proyecto 2 -->
+            <article class="proyecto-card">
+                <div class="proyecto-waveform">
+                    <svg viewBox="0 0 220 96" preserveAspectRatio="none">
+                        <rect width="220" height="96" fill="#050507" />
+                        <path d="M0 48 C15 42, 30 54, 45 48 S75 40, 90 48 S120 56, 135 48 S165 42, 180 48 S210 54, 220 48" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.6"/>
+                    </svg>
+                    <span class="proyecto-estado estado-morado">
+                        <span class="punto-estado"></span> MASTERED
+                    </span>
+                </div>
+
+                <div class="proyecto-info">
+                    <div class="proyecto-titulo">
+                        <h3>Midnight Drive</h3>
+                        <span class="etiqueta-genero">LO-FI</span>
+                    </div>
+                    <div class="proyecto-detalles">
+                        <span>📅 Created Oct 12, 2023</span>
+                        <span>⏱️ 04:12</span>
+                        <span>🎵 90 BPM • C#m</span>
+                    </div>
+                </div>
+
+                <div class="proyecto-acciones">
+                    <button type="button" class="btn-abrir">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M8 5v14l11-7z"/></svg>
+                        Open
+                    </button>
+                    <button type="button" class="btn-accion-icono" aria-label="Favorito">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </button>
+                    <button type="button" class="btn-accion-icono" aria-label="Compartir">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>
+                    </button>
+                    <button type="button" class="btn-accion-icono btn-eliminar" aria-label="Eliminar">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Proyecto 3 -->
+            <article class="proyecto-card">
+                <div class="proyecto-waveform">
+                    <svg viewBox="0 0 220 96" preserveAspectRatio="none">
+                        <rect width="220" height="96" fill="#050507" />
+                        <path d="M0 48 L12 10 L24 86 L36 20 L48 78 L60 14 L72 82 L84 18 L96 80 L108 16 L120 84 L132 22 L144 76 L156 12 L168 86 L180 20 L192 78 L204 16 L220 48" fill="none" stroke="#facc15" stroke-width="2" opacity="0.85"/>
+                    </svg>
+                    <span class="proyecto-estado estado-amarillo">
+                        <span class="punto-estado"></span> UNFINISHED
+                    </span>
+                </div>
+
+                <div class="proyecto-info">
+                    <div class="proyecto-titulo">
+                        <h3>Cyber Ritual</h3>
+                        <span class="etiqueta-genero">INDUSTRIAL</span>
+                    </div>
+                    <div class="proyecto-detalles">
+                        <span>📅 Updated 3 days ago</span>
+                        <span>⏱️ 02:45</span>
+                        <span>🎵 135 BPM • Dm</span>
+                    </div>
+                </div>
+
+                <div class="proyecto-acciones">
+                    <button type="button" class="btn-abrir">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M8 5v14l11-7z"/></svg>
+                        Open
+                    </button>
+                    <button type="button" class="btn-accion-icono" aria-label="Favorito">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </button>
+                    <button type="button" class="btn-accion-icono" aria-label="Compartir">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>
+                    </button>
+                    <button type="button" class="btn-accion-icono btn-eliminar" aria-label="Eliminar">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Bloque "buscar más antiguo" -->
+            <div class="proyecto-archivo">
+                <span class="archivo-icono">📂</span>
+                <p>Looking for something older?</p>
+                <a href="#" class="link-ver-archivo">VIEW ARCHIVE</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ============================================
+         PANEL DERECHO: ESTADÍSTICAS
+    ============================================= -->
+    <aside class="panel-derecho">
+
+        <p class="titulo-panel">PROJECT STATS</p>
+
+        <div class="stats-grid">
+            <div class="stat-caja">
+                <span class="stat-label">TOTAL</span>
+                <span class="stat-numero">24</span>
+            </div>
+            <div class="stat-caja">
+                <span class="stat-label">FINISHED</span>
+                <span class="stat-numero">8</span>
+            </div>
+        </div>
+
+        <p class="titulo-panel">COLLABORATORS</p>
+        <div class="colaboradores">
+            <div class="colaborador-avatar avatar-iniciales" style="background:#7c2dff;">MC</div>
+            <div class="colaborador-avatar avatar-iniciales" style="background:#df45ff;">LD</div>
+            <div class="colaborador-avatar avatar-iniciales" style="background:#a855f7;">NK</div>
+            <span class="colaborador-mas">+5</span>
+        </div>
+
+        <div class="tarjeta-tip">
+            <p class="tip-encabezado"><span class="tip-icono">⚡</span> QUICK TIP</p>
+            <p class="tip-texto">
+                Organize your projects using <strong>Custom Folders</strong> for better
+                workflow management. Access folder settings in the 'Cloud Storage' tab.
+            </p>
+            <a href="#" class="link-aprender-mas">LEARN MORE</a>
+        </div>
+
+        <div class="mentor">
+            <div class="mentor-avatar avatar-iniciales" style="background: linear-gradient(135deg,#7e22ce,#a855f7);">JZ</div>
+            <div>
+                <p class="mentor-nombre">Joel Zimmerman</p>
+                <p class="mentor-estado"><span class="punto-estado" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#22c55e;box-shadow:0 0 6px #22c55e;"></span> Studio Mentor Online</p>
+            </div>
+        </div>
+
+        <div class="mentor-mas-avatares">
+            <div class="avatar-iniciales" style="background:#a855f7;">A</div>
+            <div class="avatar-iniciales" style="background:#df45ff;">C</div>
+            <div class="avatar-iniciales" style="background:#7c2dff;">E</div>
+            <div class="avatar-iniciales" style="background:#c084fc;color:#2b1140;">G</div>
+        </div>
+
+    </aside>
+
+</div>
+
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>
